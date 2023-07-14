@@ -1,5 +1,134 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "TildaSansExtraBold";
+  src: url("./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.eot");
+  src: url("./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.woff2") format("woff2"), url("./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TildaSansBold";
+  src: url("./assets/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.eot");
+  src: url("./assets/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.woff2") format("woff2"), url("./assets/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TildaSansRegular";
+  src: url("./assets/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.eot");
+  src: url("./assets/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.woff2") format("woff2"), url("./assets/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*заголовки*/
+/*тексты*/
+/*кнопки*/
+/*текст кнопок*/
+/*фон блоков 2,3,5*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+.container {
+  max-width: 1140px;
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+button {
+  padding: 0.75rem 2.5rem;
+  border-radius: 1.5625rem;
+  background: #BC2525;
+  border: none;
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  color: #F1F5FA;
+  font-family: "TildaSansBold";
+  font-size: 1.125rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+button:hover {
+  background: #D72424;
+}
+
+h2 {
+  color: #000;
+  font-family: "TildaSansBold";
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 312.5rem;
+  /*пока ставлю как по макету текущему на дескопе*/
+}
+
+.header {
+  flex-basis: 3.18%;
+}
+
+.main {
+  display: flex;
+  flex-basis: 94.05%;
+  flex-direction: column;
+}
+
+.festival {
+  flex-basis: 11.25%;
+}
+
+.progress {
+  flex-basis: 15.37%;
+}
+
+.partners {
+  flex-basis: 12.4%;
+}
+
+.competition {
+  flex-basis: 15.82%;
+}
+
+.review {
+  flex-basis: 24.86%;
+}
+
+.help {
+  flex-basis: 20.3%;
+  /*может блок в дальнейшем будет меньше, пока ставлю по макету*/
+}
+
+.footer {
+  flex-basis: 2.77%;
 }/*# sourceMappingURL=style.css.map */
