@@ -94,6 +94,25 @@ body {
   /*пока ставлю как по макету текущему на дескопе*/
 }
 
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+li {
+  cursor: pointer;
+}
+
 .header {
   flex-basis: 3.18%;
 }
@@ -131,4 +150,90 @@ body {
 
 .footer {
   flex-basis: 2.77%;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  background: #F9F6F1;
+}
+
+.partners__heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partners__buttons {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 20%;
+       column-gap: 20%;
+  align-items: center;
+}
+
+.partners__buttons button {
+  width: 100%;
+}
+
+.partners__slider img {
+  width: 100%;
+}
+
+.partners__slider img:nth-child(3) {
+  height: 4vh;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(-100%);
+  }
+}
+.partners__slider {
+  position: relative;
+  width: 90%;
+  height: 17vh;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  padding-top: 2%;
+  background-color: #FFF;
+  border-radius: 4.6875rem;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  overflow: hidden;
+}
+.partners__slider::before, .partners__slider::after {
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 17vh;
+  position: absolute;
+  width: 25%;
+  z-index: 2;
+}
+.partners__slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.partners__slider::before {
+  left: 0;
+  top: 0;
+}
+.partners__slider .slide-track {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+  animation: scroll 20s linear infinite;
+}
+.partners__slider .slide-track img:nth-child(3) {
+  width: 20%;
+}
+.partners__slider .slide {
+  width: 20%;
 }/*# sourceMappingURL=style.css.map */
