@@ -1,1 +1,113 @@
 @import './template';
+
+// Partners //
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+
+    background: #F9F6F1;
+}
+
+.partners__heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.partners__buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 20%;
+    align-items: center;
+
+}
+
+.partners__buttons button {
+    width: 100%;
+}
+
+.partners__slider img {
+    width: 100%;
+}
+
+.partners__slider img:nth-child(3) {
+height: 4vh;
+}
+
+// Carousel start //
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 20s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	90% { transform: translateX(calc(-20% * 5))}
+}
+
+
+// Styling
+.partners__slider {
+    position: relative;
+    width: 90%;
+    height: 17vh;
+
+    margin-top: 3%;
+    margin-bottom: 5%;
+
+    padding-top: 2%;
+
+    background-color: #FFF;
+	border-radius: 4.6875rem;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	overflow: hidden;
+
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 17vh;
+		position: absolute;
+		width: 25%;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+        width: calc(20% * 4);
+
+        display: flex;
+        align-items: center;
+        column-gap: 5%;
+
+		animation: scroll $animationSpeed linear infinite;
+	}
+
+    .slide-track img:nth-child(3) {
+        width: 20%;
+    }
+	
+	.slide {
+		width: 20%;
+	}
+}
+
+// Carousel end //
+
+// Partners end //
