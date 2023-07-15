@@ -62,7 +62,7 @@ html {
   margin: 0 auto;
 }
 
-button {
+.button {
   padding: 0.75rem 2.5rem;
   border-radius: 1.5625rem;
   background: #BC2525;
@@ -164,6 +164,7 @@ li {
 .partners__heading {
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
 .partners__buttons {
