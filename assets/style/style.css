@@ -84,7 +84,7 @@ h2 {
   color: #000;
   font-family: "TildaSansBold";
   font-size: 2.5rem;
-  line-height: 4rem;
+  line-height: 4rem; /* 160% */
 }
 
 body {
@@ -113,7 +113,7 @@ body {
 }
 
 .partners {
-  flex-basis: 12.4%;
+  flex-basis: 10%;
 }
 
 .competition {
