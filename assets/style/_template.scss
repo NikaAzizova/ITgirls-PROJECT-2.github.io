@@ -92,6 +92,7 @@ body {
 .button {
     padding: 0.75rem 2.5rem;
     border-radius: 1.5625rem;
+    /*max-height: 2.875rem; добавила максимальную высоту*/
     background: $btn;
     border: none;
     backdrop-filter: blur(16px);
@@ -204,11 +205,45 @@ body {
         }
 
         .block-competition-img-block {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 60%;
+
             .block-competition-img {
-                .block-competition-vector {}
+                display: flex;
+                flex-basis: 100%;
+                background-image: url(../images/competition-background.png);
+                background-size: 34.8125rem 25.14531rem;
+
+                .block-competition-img-inner {
+                    display: flex;
+                    flex-basis: 100%;
+                    align-items: center;
+                    justify-content: center;
+
+                    background-image: url(../images/competition-girl.png);
+                    background-size: auto 22.91781rem;
+                }
+
+                .block-competition-vector {
+                    width: 23.17156rem;
+                    height: 4.95231rem;
+                    transform: rotate(-15.203deg);
+                    flex-shrink: 0;
+                }
             }
 
-            .block-competition-button {}
+            .block-competition-buttons {
+                display: flex;
+                flex-basis: 40%;
+
+                justify-content: space-around;
+
+                .block-competition-button {
+                    display: inline-block;
+                    align-self: center;
+                }
+            }
         }
     }
 }
