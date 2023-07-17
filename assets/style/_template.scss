@@ -43,6 +43,8 @@ $background: #F9F6F1;
 /*фон блоков 2,3,5*/
 
 $font: "TildaSansBold";
+$font2: "TildaSansExtraBold";
+$font3: "TildaSansRegular";
 
 * {
     margin: 0;
@@ -69,15 +71,24 @@ html {
         font-size: 60%;
     }
 }
+body {
+    display: flex;
+    flex-direction: column;
+    height: 312.5rem;
+    /*пока ставлю как по макету текущему на дескопе*/
+}
 
 .container {
     max-width: 1140px;
     min-width: 320px;
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
 
-button {
+.button {
     padding: 0.75rem 2.5rem;
     border-radius: 1.5625rem;
     background: $btn;
@@ -90,23 +101,17 @@ button {
     line-height: normal;
 }
 
-button:hover {
+.button:hover {
     background: #D72424;
 }
 
-h2 {
+.title-h2 {
     color: $header;
     font-family: $font;
     font-size: 2.5rem;
-    line-height: 4rem;
+    line-height: 4rem; /* 160% */
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    height: 312.5rem;
-    /*пока ставлю как по макету текущему на дескопе*/
-}
 
 .header {
     flex-basis: 3.18%;
@@ -127,7 +132,7 @@ body {
 }
 
 .partners {
-    flex-basis: 12.4%;
+    flex-basis: 10%;
 }
 
 .competition {
