@@ -125,27 +125,27 @@ li {
   flex-direction: column;
 }
 
-.festival {
+.block-festival {
   flex-basis: 11.25%;
 }
 
-.progress {
+.block-progress {
   flex-basis: 15.37%;
 }
 
-.partners {
-  flex-basis: 10%;
+.block-partners {
+  flex-basis: 9%;
 }
 
-.competition {
+.block-competition {
   flex-basis: 15.82%;
 }
 
-.review {
+.block-review {
   flex-basis: 24.86%;
 }
 
-.help {
+.block-help {
   flex-basis: 20.3%;
   /*может блок в дальнейшем будет меньше, пока ставлю по макету*/
 }
@@ -154,24 +154,24 @@ li {
   flex-basis: 2.77%;
 }
 
-.partners {
+.block-partners {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 2%;
   background: #F9F6F1;
 }
 
 .partners__heading {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .partners__buttons {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   -moz-column-gap: 20%;
        column-gap: 20%;
   align-items: center;
@@ -201,8 +201,7 @@ li {
   position: relative;
   width: 90%;
   height: 17vh;
-  margin-top: 3%;
-  margin-bottom: 5%;
+  margin: 3% auto 5% auto;
   padding-top: 2%;
   background-color: #FFF;
   border-radius: 4.6875rem;
