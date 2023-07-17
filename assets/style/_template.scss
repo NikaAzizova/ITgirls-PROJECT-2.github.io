@@ -112,6 +112,20 @@ body {
     line-height: 4rem; /* 160% */
 }
 
+.text-p {
+    color: $text;
+    font-family: $font3;
+    font-size: 1.375rem;
+    line-height: 2.25rem; /* 163.636% */
+}
+
+.text-p__small {
+    color: $text;
+    font-family: $font3;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.375rem; /* 137.5% */
+}
 
 a,
 a:visited {
