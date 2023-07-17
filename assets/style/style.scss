@@ -29,7 +29,23 @@
     width: 100%;
 }
 
-.partners__slider img {
+.slide {
+    width: 18%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.slide__img {
+    height: 6rem;
+margin-bottom: 1rem;
+}
+
+.slide img {
+    width: 90%;
+}
+
+.slide .text-p__small {
     width: 100%;
 }
 
@@ -37,7 +53,12 @@
     width: 100%;
 
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5% auto 5% auto;
+    justify-content: space-between;
+    align-items: start;
+    margin: 3% auto 3% auto;
+    padding: 3%;
+
+    background-color: #fff;
+    border-radius: 4.6875rem;
+    box-shadow: 0px 15px 40px 0px rgba(2, 43, 121, 0.10);
 }
