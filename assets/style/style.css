@@ -96,6 +96,21 @@ body {
   line-height: 4rem; /* 160% */
 }
 
+.text-p {
+  color: #324665;
+  font-family: "TildaSansRegular";
+  font-size: 1.375rem;
+  line-height: 2.25rem; /* 163.636% */
+}
+
+.text-p__small {
+  color: #324665;
+  font-family: "TildaSansRegular";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.375rem; /* 137.5% */
+}
+
 .header {
   flex-basis: 3.18%;
 }
@@ -106,27 +121,27 @@ body {
   flex-direction: column;
 }
 
-.festival {
+.block-festival {
   flex-basis: 11.25%;
 }
 
-.progress {
+.block-progress {
   flex-basis: 15.37%;
 }
 
-.partners {
+.block-partners {
   flex-basis: 10%;
 }
 
-.competition {
+.block-competition {
   flex-basis: 15.82%;
 }
 
-.review {
+.block-review {
   flex-basis: 24.86%;
 }
 
-.help {
+.block-help {
   flex-basis: 20.3%;
   /*может блок в дальнейшем будет меньше, пока ставлю по макету*/
 }
