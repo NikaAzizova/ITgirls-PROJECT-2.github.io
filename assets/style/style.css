@@ -144,7 +144,6 @@ body {
   display: flex;
   flex: 1;
   border-radius: 4.6875rem;
-  background: #FFF;
   box-shadow: 0px 25px 100px 0px rgba(2, 43, 121, 0.1);
 }
 .block-competition .block-competition-container .block-competition-content {
@@ -186,8 +185,11 @@ body {
 .block-competition .block-competition-container .block-competition-img-block .block-competition-img {
   display: flex;
   flex-basis: 100%;
+  margin-right: -20%;
   background-image: url(../images/competition-background.png);
   background-size: 34.8125rem 25.14531rem;
+  background-position: 60% 50%;
+  background-repeat: no-repeat;
 }
 .block-competition .block-competition-container .block-competition-img-block .block-competition-img .block-competition-img-inner {
   display: flex;
@@ -195,7 +197,8 @@ body {
   align-items: center;
   justify-content: center;
   background-image: url(../images/competition-girl.png);
-  background-size: auto 22.91781rem;
+  background-position: 30% 60%;
+  background-repeat: no-repeat;
 }
 .block-competition .block-competition-container .block-competition-img-block .block-competition-img .block-competition-vector {
   width: 23.17156rem;
@@ -210,7 +213,6 @@ body {
 }
 .block-competition .block-competition-container .block-competition-img-block .block-competition-buttons .block-competition-button {
   display: inline-block;
-  align-self: center;
 }
 
 .block-review {
