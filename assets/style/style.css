@@ -55,6 +55,13 @@ html {
   }
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 312.5rem;
+  /*пока ставлю как по макету текущему на дескопе*/
+}
+
 .container {
   max-width: 1140px;
   min-width: 320px;
@@ -78,22 +85,15 @@ html {
   line-height: normal;
 }
 
-button:hover {
+.button:hover {
   background: #D72424;
 }
 
-h2 {
+.title-h2 {
   color: #000;
   font-family: "TildaSansBold";
   font-size: 2.5rem;
-  line-height: 4rem;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  height: 312.5rem;
-  /*пока ставлю как по макету текущему на дескопе*/
+  line-height: 4rem; /* 160% */
 }
 
 a,
