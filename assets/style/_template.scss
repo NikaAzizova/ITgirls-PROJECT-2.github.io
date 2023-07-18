@@ -175,8 +175,12 @@ body {
             .block-competition__text {
                 display: flex;
                 flex-direction: column;
-                flex-basis: 40%;
+                flex-basis: 52%;
                 justify-content: space-around;
+                gap: 5%;
+                .block-competition__title{
+                    text-align: center;
+                }
             }
 
             .block-competition__nomination {
@@ -201,7 +205,7 @@ body {
                 
             }
             .block-competition__text-2{
-                flex-basis: 30%;    
+                flex-basis: 12%;    
             }
         }
 
@@ -244,6 +248,11 @@ body {
                 justify-content: space-around;
                 .block-competition__button {
                     display: inline-block;
+                    align-self: center;
+                    .block-competition__button-1{
+                        text-decoration: none;
+
+                    }
                 }
             }
         }

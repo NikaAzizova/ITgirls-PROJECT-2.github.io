@@ -157,8 +157,12 @@ body {
 .block-competition .block-competition__container .block-competition__content .block-competition__text {
   display: flex;
   flex-direction: column;
-  flex-basis: 40%;
+  flex-basis: 52%;
   justify-content: space-around;
+  gap: 5%;
+}
+.block-competition .block-competition__container .block-competition__content .block-competition__text .block-competition__title {
+  text-align: center;
 }
 .block-competition .block-competition__container .block-competition__content .block-competition__nomination {
   flex-basis: 30%;
@@ -178,7 +182,7 @@ body {
   list-style-type: none;
 }
 .block-competition .block-competition__container .block-competition__content .block-competition__text-2 {
-  flex-basis: 30%;
+  flex-basis: 12%;
 }
 .block-competition .block-competition__container .block-competition__img-block {
   display: flex;
@@ -217,6 +221,10 @@ body {
 }
 .block-competition .block-competition__container .block-competition__img-block .block-competition__buttons .block-competition__button {
   display: inline-block;
+  align-self: center;
+}
+.block-competition .block-competition__container .block-competition__img-block .block-competition__buttons .block-competition__button .block-competition__button-1 {
+  text-decoration: none;
 }
 
 .block-review {
