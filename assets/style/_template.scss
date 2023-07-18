@@ -92,7 +92,6 @@ body {
 .button {
     padding: 0.75rem 2.5rem;
     border-radius: 1.5625rem;
-    /*max-height: 2.875rem; добавила максимальную высоту*/
     background: $btn;
     border: none;
     backdrop-filter: blur(16px);
@@ -158,32 +157,31 @@ body {
     display: flex;
     flex-basis: 15.82%;
 
-    .block-competition-container {
+    .block-competition__container {
         display: flex;
         flex: 1;
         border-radius: 4.6875rem;
         box-shadow: 0px 25px 100px 0px rgba(2, 43, 121, 0.10);
 
-        .block-competition-content {
+        .block-competition__content {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            flex-basis: 60%;
+            flex-basis: 75%;
+            gap: 5%;
             padding-left: 6.19rem;
             padding-top: 3.87rem;
 
-            .block-competition-text {
+            .block-competition__text {
                 display: flex;
                 flex-direction: column;
-                flex-basis: 50%;
+                flex-basis: 40%;
                 justify-content: space-around;
             }
 
-            .block-competition-nomination {
-
-                flex-basis: 50%;
-
-                .block-competition-nomination-title {
+            .block-competition__nomination {
+                flex-basis: 30%;
+                .block-competition__nomination-title {
                     color: $btn;
                     font-family: $font;
                     font-size: 2rem;
@@ -192,44 +190,47 @@ body {
                     line-height: 2.625rem;
                 }
 
-                .block-competition-nomination-list {
-                    .block-competition-nomination-item {
+                .block-competition__nomination-list {
+                    .block-competition__nomination-item {
                         font-weight: 700;
                         line-height: 2.25rem;
                         color: $header;
                         list-style-type: none;
                     }
                 }
+                
+            }
+            .block-competition__text-2{
+                flex-basis: 30%;    
             }
         }
 
-        .block-competition-img-block {
+        .block-competition__img-block {
             display: flex;
             flex-direction: column;
             flex-basis: 60%;
 
-            .block-competition-img {
+            .block-competition__img {
                 display: flex;
                 flex-basis: 100%;
+                justify-content: center;
                 margin-right: -20%;
                 background-image: url(../images/competition-background.png);
                 background-size: 34.8125rem 25.14531rem;
                 background-position: 60% 50%;
                 background-repeat: no-repeat;
 
-                .block-competition-img-inner {
+                .block-competition__img-inner {
                     display: flex;
-                    flex-basis: 100%;
+                    flex-basis: 50%;
                     align-items: center;
                     justify-content: center;
-
                     background-image: url(../images/competition-girl.png);
-                    background-position: 30% 60%;
+                    background-position: 70% 60%;
                     background-repeat: no-repeat;
-    // background-size: cover; 
                 }
 
-                .block-competition-vector {
+                .block-competition__vector {
                     width: 23.17156rem;
                     height: 4.95231rem;
                     transform: rotate(-15.203deg);
@@ -237,13 +238,12 @@ body {
                 }
             }
 
-            .block-competition-buttons {
+            .block-competition__buttons {
                 display: flex;
                 flex-basis: 40%;
                 justify-content: space-around;
-                .block-competition-button {
+                .block-competition__button {
                     display: inline-block;
-                    // align-self: center;
                 }
             }
         }
