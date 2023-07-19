@@ -63,6 +63,22 @@
     scroll-snap-align: start;
     width: 23%;
     margin: 0 1rem;
+
+    @media (max-width: 900px) {
+        width: 23%;
+    }
+
+    @media (max-width: 700px) {
+        width: 31%;
+    }
+
+    @media (max-width: 500px) {
+        width: 47%;
+    }
+
+    @media (max-width: 400px) {
+        width: 100%;
+    }
 }
 
 

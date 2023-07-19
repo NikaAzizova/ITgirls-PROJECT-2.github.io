@@ -223,6 +223,26 @@ li {
   width: 23%;
   margin: 0 1rem;
 }
+@media (max-width: 900px) {
+  .slide {
+    width: 23%;
+  }
+}
+@media (max-width: 700px) {
+  .slide {
+    width: 31%;
+  }
+}
+@media (max-width: 500px) {
+  .slide {
+    width: 47%;
+  }
+}
+@media (max-width: 400px) {
+  .slide {
+    width: 100%;
+  }
+}
 
 .slide img {
   height: 3rem;
