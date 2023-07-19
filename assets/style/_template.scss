@@ -57,7 +57,7 @@ $font3: "TildaSansRegular";
 html {
     font-size: 100%;
 
-    @media (max-width: 900px) {
+    /*@media (max-width: 900px) {
         font-size: 90%;
     }
 
@@ -71,7 +71,7 @@ html {
 
     @media (max-width: 400px) {
         font-size: 60%;
-    }
+    }*/
 }
 
 body {
@@ -150,7 +150,7 @@ body {
 }
 
 .block-partners {
-    flex-basis: 12.4%;
+    flex-basis: 9%;
 }
 
 .block-competition {
