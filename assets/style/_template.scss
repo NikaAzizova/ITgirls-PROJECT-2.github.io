@@ -71,15 +71,24 @@ html {
 
     @media (max-width: 400px) {
         font-size: 60%;
-    }*/
+    } не работает с указанным размером шрифта*/
 }
 
 body {
     display: flex;
     flex-direction: column;
     height: 312.5rem;
-    /*пока ставлю как по макету текущему на дескопе*/
+
+    @media (max-width: 900px) {
+        height: 500rem;
+        /*эту величину поставила для теста своего блока*/
+    }
 }
+.main {
+    display: flex;
+    flex-basis: 94.05%;
+    flex-direction: column;
+}  /*просто блок перенесла выше*/
 
 .container {
     max-width: 1140px;
@@ -111,7 +120,18 @@ body {
     font-family: $font;
     font-size: 2.5rem;
     line-height: 4rem;
-    /* 160% */
+
+    @media (max-width: 900px) {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+    /*шрифт по брейкпойнтам добавила*/
 }
 
 .text-p {
@@ -119,7 +139,18 @@ body {
     font-family: $font3;
     font-size: 1.375rem;
     line-height: 2.25rem;
-    /* 163.636% */
+
+    @media (max-width: 900px) {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
+    /*шрифт по брейкпойнтам добавила*/
 }
 
 .text-p__small {
@@ -128,17 +159,22 @@ body {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.375rem;
-    /* 137.5% */
+
+    @media (max-width: 900px) {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
+
+    /*шрифт по брейкпойнтам добавила*/
 }
 
 .header {
     flex-basis: 3.18%;
-}
-
-.main {
-    display: flex;
-    flex-basis: 94.05%;
-    flex-direction: column;
 }
 
 .block-festival {
@@ -156,12 +192,20 @@ body {
 .block-competition {
     display: flex;
     flex-basis: 15.82%;
+    justify-content: center;
 
     .block-competition__container {
         display: flex;
         flex: 1;
+
         border-radius: 4.6875rem;
         box-shadow: 0px 25px 100px 0px rgba(2, 43, 121, 0.10);
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
 
         .block-competition__content {
             display: flex;
@@ -172,26 +216,40 @@ body {
             padding-left: 6.19rem;
             padding-top: 3.87rem;
 
+            @media (max-width: 900px) {
+                flex-basis: 60%;
+                max-width: 80%;
+                padding-left: 0;
+                padding-top: 0;
+            }
+
             .block-competition__text {
                 display: flex;
                 flex-direction: column;
                 flex-basis: 52%;
                 justify-content: space-around;
                 gap: 5%;
-                .block-competition__title{
+
+                @media (max-width: 900px) {
+                    text-align: center;
+                    flex-basis: 40%;
+                }
+
+                .block-competition__title {
                     text-align: center;
                 }
             }
 
             .block-competition__nomination {
                 flex-basis: 30%;
+
+                @media (max-width: 900px) {
+                    text-align: center;
+                }
+
                 .block-competition__nomination-title {
                     color: $btn;
-                    font-family: $font;
-                    font-size: 2rem;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 2.625rem;
+
                 }
 
                 .block-competition__nomination-list {
@@ -200,12 +258,32 @@ body {
                         line-height: 2.25rem;
                         color: $header;
                         list-style-type: none;
+
+                        @media (max-width: 900px) {
+                            font-weight: 600;
+                            line-height: 2rem;
+                        }
+
+                        @media (max-width: 500) {
+                            font-weight: 0.6rem;
+                            line-height: 1rem;
+                        }
+
+                        @media (max-width: 400) {
+                            font-weight: 0.5rem;
+                            line-height: 1rem;
+                        }
                     }
                 }
-                
+
             }
-            .block-competition__text-2{
-                flex-basis: 12%;    
+
+            .block-competition__text-2 {
+                flex-basis: 12%;
+
+                @media (max-width: 900px) {
+                    text-align: center;
+                }
             }
         }
 
@@ -213,6 +291,10 @@ body {
             display: flex;
             flex-direction: column;
             flex-basis: 60%;
+
+            @media (max-width: 900px) {
+                flex-basis: 40%;
+            }
 
             .block-competition__img {
                 display: flex;
@@ -224,6 +306,10 @@ body {
                 background-position: 60% 50%;
                 background-repeat: no-repeat;
 
+                @media (max-width: 900px) {
+                    background-size: 19rem auto;
+                }
+
                 .block-competition__img-inner {
                     display: flex;
                     flex-basis: 50%;
@@ -232,6 +318,11 @@ body {
                     background-image: url(../images/competition-girl.png);
                     background-position: 70% 60%;
                     background-repeat: no-repeat;
+
+                    @media (max-width: 900px) {
+                        background-size: 17rem auto;
+                        background-position: 40% 60%;
+                    }
                 }
 
                 .block-competition__vector {
@@ -246,10 +337,12 @@ body {
                 display: flex;
                 flex-basis: 40%;
                 justify-content: space-around;
+
                 .block-competition__button {
                     display: inline-block;
                     align-self: center;
-                    .block-competition__button-1{
+
+                    .block-competition__button-1 {
                         text-decoration: none;
 
                     }
