@@ -1,1 +1,96 @@
 @import './template';
+
+.block-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+
+    background: $background;
+
+    .container-column {
+        max-width: 1140px;
+        min-width: 320px;
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        .partners__heading {
+            display: flex;
+            margin: 0 auto;
+        }
+    
+        .partners__slider {
+            width: 100%;
+        
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            padding: 3% 3% 3% 3rem;
+            margin: 3% auto 3% auto;
+        
+            background-color: #fff;
+            border-radius: 4.6875rem;
+            box-shadow: 0px 15px 40px 0px rgba(2, 43, 121, 0.10);
+            overflow-x: auto;
+
+            .slider--track {
+                width: 100%;
+            
+                display: flex;
+                margin: 0 auto;
+                align-self: center;
+            
+                overflow-x: scroll;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+
+                .slide {
+                    flex: none;
+                    scroll-snap-align: start;
+                    width: 23%;
+                    margin: 0 1rem;
+                
+                    @media (max-width: 900px) {
+                        width: 23%;
+                    }
+                
+                    @media (max-width: 700px) {
+                        width: 31%;
+                    }
+                
+                    @media (max-width: 500px) {
+                        width: 47%;
+                    }
+                
+                    @media (max-width: 400px) {
+                        width: 100%;
+                    }
+                }
+                
+                .slide img {
+                    height: 3rem;
+                    margin-bottom: 1rem;
+                }
+                
+                .slide .text-p__small {
+                    width: 100%;
+                }
+            }
+        }
+        .partners__buttons {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            column-gap: 20%;
+            align-items: center;
+        
+            .partners__buttons button {
+            width: 100%;
+            }
+        }
+    } 
+}
