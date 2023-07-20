@@ -18,11 +18,45 @@
       rel="stylesheet"
       href="./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.css"
     />
-    <title>ФБД</title>
+    <title>Фонд борьбы с диабетом</title>
   </head>
 
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="header__container container">
+        <!-- logo -->
+        <a href="#" class="header__logo"
+          ><img
+            src="./assets/images/logo-mob.jpg"
+            class="header__img"
+            alt="ФБД"
+        /></a>
+        <!-- hamburger icon -->
+        <input class="header__side-menu" type="checkbox" id="side-menu" />
+        <label class="header__hamb" for="side-menu"
+          ><span class="header__hamb-line"></span
+        ></label>
+        <!-- menu -->
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">ДиабетФест</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Наши Достижения</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Партнеры</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__btn-container">
+          <div class="header__btn">
+            <a href="#" class="header__btn-link button">Помочь</a>
+          </div>
+        </div>
+      </div>
+    </header>
     <main class="main">
       <section class="block-festival"></section>
       <section class="block-progress"></section>
