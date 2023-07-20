@@ -158,9 +158,86 @@ body {
   flex-basis: 3.18%;
 }
 
+
 .block-festival {
   flex-basis: 11.25%;
 }
+.block-festival__container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.block-festival__text {
+  font-family: 'TildaSansBold', sans-serif;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.block-festival__text-p {
+  font-family: 'TildaSansRegular', sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 56px;
+  text-align: center;
+}
+.block-festival__content {
+  background-position: top center;
+  background-size: initial;
+  padding-bottom: 180px;
+}
+
+
+.block-festival__why {
+  margin-top: 60px;
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(3, 312px);
+  justify-content: center;
+}
+
+.block-festival__why-item {
+  text-align: center;
+}
+
+.block-festival__why-item-title {
+  font-family: 'TildaSansMedium', sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 24px 0;
+}
+
+.block-festival__why-item-text {
+  font-family: 'TildaSansRegular', sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.block-festival__why-item-img {
+  height: 200px;
+}
+
+.block-festival__why-item-image img {
+  max-width: 100%;
+}
+
+.block-festival__buttons {
+  display: flex;
+  flex-basis: 40%;
+  justify-content: space-around;
+}
+
+.block-festival__button {
+      display: inline-block;
+      align-self: center;
+}
+
+.block-festival__button-1 {
+  text-decoration: none;
+}
+
 
 .block-progress {
   flex-basis: 15.37%;
