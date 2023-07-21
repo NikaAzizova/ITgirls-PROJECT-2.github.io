@@ -182,3 +182,130 @@
   /* margin: 0 14px 0 12px; */
 }
 /* header end */
+
+
+/* Блок достижения block-progress*/
+.block-progress {
+  background-color: $background;
+}
+
+.container-two{
+  
+  display: flex;
+  flex-direction: column;
+  .block-progress__main-wrapper{
+      display: flex;
+      .block-progress__wrapper-two{
+          .block-progress__img{
+            max-width: 100%;
+            width: 100%;
+              padding-top: 10%;
+          }
+      }
+  }
+}
+
+/*Часть с основным текстом block-progress*/
+  .block-progress__wrapper {
+      max-width: 50%;
+      width: 100%;
+      padding-top: 7%;
+     
+
+      .block-progress__title {
+          
+          margin-bottom: 1.38rem;
+      }
+
+
+      .block-progress__text {
+          max-width: 100%;
+          width: 100%;
+          height: 80%;
+          color: $text;
+          font-family: $font3;
+          font-size: 1.375rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 2.25rem;
+          margin-bottom: 3rem;
+
+      }
+  }
+/*Часть с карточками проектов блока block-progress*/
+  .cards{
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+               
+          .card__title{
+            margin-bottom: 8px;
+            font-family: $font2;
+            font-size: 1.75rem;
+            font-weight: 700;
+            line-height: normal;
+            color: $header;
+            text-align: center;
+
+          }
+          .card__text{
+              
+            font-family: $font3;
+            color: $text;
+            font-weight: 400;
+            font-size: 1.0625rem;
+          }
+      }
+  
+.block-projects__wrapper{
+  
+  
+  .card{
+      max-width: 220px;
+      width: 100%;
+      
+      .card__wrapper{
+          margin: 5%;
+          border: 3px solid #e7dcc8;
+          border-radius: 15px;
+          background-color: #ffffff;
+
+          .card__img{
+              padding: 20% 2% 20% 2%;
+          }
+          .card__img-size{
+              max-width: 100%;
+              width: 100%;
+              min-height: 200px;
+          }
+          .title-h3{
+              margin-bottom: 1rem;
+          }
+        .card__text{
+          margin-bottom: 1rem;
+          padding: 5% 5% 0 5%;
+          
+
+        }
+        .text-p__block{
+          margin-bottom: 3.88rem;
+
+        }
+        .card__link{
+          margin-bottom: 1rem;
+          display: block;
+          text-align: center;
+          text-decoration: none;
+          color: $btn;
+        }
+      }
+      
+
+  }
+}
+
+
+  

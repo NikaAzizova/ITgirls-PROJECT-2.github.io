@@ -57,21 +57,21 @@ $font3: "TildaSansRegular";
 html {
     font-size: 100%;
 
-    /*@media (max-width: 900px) {
+    @media screen and (max-width: 900px) {
         font-size: 90%;
     }
 
-    @media (max-width: 700px) {
+    @media screen and (max-width: 700px) {
         font-size: 80%;
     }
 
-    @media (max-width: 500px) {
+    @media screen and (max-width: 500px) {
         font-size: 70%;
     }
 
-    @media (max-width: 400px) {
+    @media screen and (max-width: 400px) {
         font-size: 60%;
-    } не работает с указанным размером шрифта*/
+    } /*не работает с указанным размером шрифта*/
 }
 
 body {
@@ -96,6 +96,14 @@ body {
     width: 100%;
     display: flex;
     margin: 0 auto;
+    @media screen and (max-width: 1088px) {
+        max-width: 888px;
+        
+    }
+    @media screen and (max-width: 919px) {
+        max-width: 719px;
+        
+    }
 }
 
 .button {
