@@ -176,20 +176,7 @@ li {
     cursor: pointer;
 }
 
-  
 
-    @media (max-width: 900px) {
-        font-size: 1rem;
-        line-height: 2rem;
-    }
-
-    @media (max-width: 500px) {
-        font-size: 0.8rem;
-        line-height: 1rem;
-    }
-
-    /*шрифт по брейкпойнтам добавила*/
-}
 
 .text-p__small {
     color: $text;
