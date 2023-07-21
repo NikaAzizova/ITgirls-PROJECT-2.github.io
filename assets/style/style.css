@@ -215,6 +215,10 @@ body {
   line-height: 140%;
 }
 
+.block-festival__why-item-text-p.text-p__small{
+  text-align: left;
+}
+
 .block-festival__why-item-img {
   height: 200px;
 }
@@ -227,6 +231,7 @@ body {
   display: flex;
   flex-basis: 40%;
   justify-content: space-around;
+  margin: 60px 0 ;
 }
 
 .block-festival__button {
@@ -237,6 +242,8 @@ body {
 .block-festival__button-1 {
   text-decoration: none;
 }
+
+
 
 
 .block-progress {
