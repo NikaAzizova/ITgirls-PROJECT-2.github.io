@@ -134,6 +134,19 @@ body {
   font-family: "TildaSansRegular";
   font-size: 1.375rem;
   line-height: 2.25rem; /* 163.636% */
+  /*шрифт по брейкпойнтам добавила*/
+}
+@media (max-width: 900px) {
+  .text-p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .text-p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
 }
 
 .text-p__small {
@@ -142,6 +155,19 @@ body {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.375rem; /* 137.5% */
+  /*шрифт по брейкпойнтам добавила*/
+}
+@media (max-width: 900px) {
+  .text-p__small {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .text-p__small {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+  }
 }
 
 a,
