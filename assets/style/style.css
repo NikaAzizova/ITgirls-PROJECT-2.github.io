@@ -189,11 +189,35 @@ body {
   padding-bottom: 180px;
 }
 
+.block-festival__video {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.block-festival__video-item {
+  width: 960px;
+  padding: 24px 0;
+}
+
+.block-festival__logo-img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.block-festival__logo-img {
+  height: 150px;
+}
+
+.block-festival__logo-img img {
+  max-width: 100%;
+}
+
 
 .block-festival__why {
   margin-top: 60px;
   display: grid;
-  gap: 100px;
+  gap: 80px;
   grid-template-columns: repeat(3, 312px);
   justify-content: center;
 }
@@ -209,6 +233,7 @@ body {
   padding: 24px 0;
 }
 
+
 .block-festival__why-item-text {
   font-family: 'TildaSansRegular', sans-serif;
   font-size: 16px;
@@ -217,13 +242,15 @@ body {
 
 .block-festival__why-item-text-p.text-p__small{
   text-align: left;
+  font-size: 20px;
+  margin-left: 18px;
 }
 
 .block-festival__why-item-img {
-  height: 200px;
+  height: 230px;
 }
 
-.block-festival__why-item-image img {
+.block-festival__why-item-img img {
   max-width: 100%;
 }
 
@@ -235,8 +262,8 @@ body {
 }
 
 .block-festival__button {
-      display: inline-block;
-      align-self: center;
+  display: inline-block;
+  align-self: center;
 }
 
 .block-festival__button-1 {
