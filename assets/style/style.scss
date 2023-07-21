@@ -1,3 +1,4 @@
+
 @import './template';
 
 .block-partners {
@@ -94,3 +95,312 @@
         }
     } 
 }
+
+/* header start */
+.header {
+  flex-basis: 3.18%;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 3.5rem 1rem 3.5rem 0;
+
+  @media screen and (max-width: 769px) {
+    padding: 2rem 1rem 2rem 0;
+  }
+}
+
+.header__logo {
+  align-self: center;
+
+  @media screen and (max-width: 769px) {
+    order: 1;
+  }
+}
+
+.header__img {
+  width: 4rem;
+
+  @media screen and (max-width: 769px) {
+    width: 5rem;
+  }
+}
+
+.header__nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #fff;
+  overflow: hidden;
+
+  @media screen and (max-width: 769px) {
+    margin-top: 26rem; //4rem
+  }
+  @media screen and (max-width: 361px) {
+    margin-top: 40rem; //4rem
+  }
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 40%;
+
+  @media screen and (max-width: 769px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40%;
+  }
+
+  @media screen and (max-width: 361px) {
+    padding-left: 30%;
+  }
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header__item {
+  list-style: none;
+}
+
+.header__link {
+  display: block;
+  padding: 30px;
+  color: $header;
+  text-align: center;
+  width: 8rem;
+}
+
+.header__link:hover {
+  color: $btn;
+}
+
+.header__nav {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+.header__hamb {
+  cursor: pointer;
+  float: left;
+  padding: 23px;
+} /* Style label tag */
+
+.header__hamb-line {
+  background: $text;
+  border-radius: 0.1875rem;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+} /* Style span tag */
+
+.header__hamb-line::before,
+.header__hamb-line::after {
+  background: $text;
+  border-radius: 0.1875rem;
+  content: "";
+  display: block;
+  height: 110%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.header__hamb-line::before {
+  top: 5px;
+}
+.header__hamb-line::after {
+  top: -5px;
+}
+
+.header__side-menu {
+  display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.header__side-menu:checked ~ .header__nav {
+  max-height: 100%;
+}
+.header__side-menu:checked ~ .header__hamb .header__hamb-line {
+  background: transparent;
+}
+.header__side-menu:checked ~ .header__hamb .header__hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.header__side-menu:checked ~ .header__hamb .header__hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .header__nav {
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+  }
+
+  .header__item {
+    float: left;
+  }
+
+  .header__link:hover {
+    background-color: transparent;
+    color: $btn;
+  }
+
+  .header__hamb {
+    display: none;
+  }
+}
+
+/* button */
+.header__btn-container {
+  @media screen and (max-width: 769px) {
+    order: 2;
+  }
+}
+
+.header__btn {
+  display: inline-block;
+  /* margin: 0 14px 0 12px; */
+}
+/* header end */
+
+
+/* Блок достижения block-progress*/
+.block-progress {
+  background-color: $background;
+}
+
+.container-two{
+  
+  display: flex;
+  flex-direction: column;
+  .block-progress__main-wrapper{
+      display: flex;
+      .block-progress__wrapper-two{
+          .block-progress__img{
+            max-width: 100%;
+            width: 100%;
+              padding-top: 10%;
+          }
+      }
+  }
+}
+
+/*Часть с основным текстом block-progress*/
+  .block-progress__wrapper {
+      max-width: 50%;
+      width: 100%;
+      padding-top: 7%;
+     
+
+      .block-progress__title {
+          
+          margin-bottom: 1.38rem;
+      }
+
+
+      .block-progress__text {
+          max-width: 100%;
+          width: 100%;
+          height: 80%;
+          color: $text;
+          font-family: $font3;
+          font-size: 1.375rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 2.25rem;
+          margin-bottom: 3rem;
+
+      }
+  }
+/*Часть с карточками проектов блока block-progress*/
+  .cards{
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+               
+          .card__title{
+            margin-bottom: 8px;
+            font-family: $font2;
+            font-size: 1.75rem;
+            font-weight: 700;
+            line-height: normal;
+            color: $header;
+            text-align: center;
+
+          }
+          .card__text{
+              
+            font-family: $font3;
+            color: $text;
+            font-weight: 400;
+            font-size: 1.0625rem;
+          }
+      }
+  
+.block-projects__wrapper{
+  
+  
+  .card{
+      max-width: 220px;
+      width: 100%;
+      
+      .card__wrapper{
+          margin: 5%;
+          border: 3px solid #e7dcc8;
+          border-radius: 15px;
+          background-color: #ffffff;
+
+          .card__img{
+              padding: 20% 2% 20% 2%;
+          }
+          .card__img-size{
+              max-width: 100%;
+              width: 100%;
+              min-height: 200px;
+          }
+          .title-h3{
+              margin-bottom: 1rem;
+          }
+        .card__text{
+          margin-bottom: 1rem;
+          padding: 5% 5% 0 5%;
+          
+
+        }
+        .text-p__block{
+          margin-bottom: 3.88rem;
+
+        }
+        .card__link{
+          margin-bottom: 1rem;
+          display: block;
+          text-align: center;
+          text-decoration: none;
+          color: $btn;
+        }
+      }
+      
+
+  }
+}
+
+

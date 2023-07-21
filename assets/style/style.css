@@ -33,23 +33,24 @@
 
 html {
   font-size: 100%;
+  /*не работает с указанным размером шрифта*/
 }
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   html {
     font-size: 90%;
   }
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
   html {
     font-size: 80%;
   }
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   html {
     font-size: 70%;
   }
 }
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   html {
     font-size: 60%;
   }
@@ -59,14 +60,35 @@ body {
   display: flex;
   flex-direction: column;
   height: 312.5rem;
-  /*пока ставлю как по макету текущему на дескопе*/
+}
+@media (max-width: 900px) {
+  body {
+    height: 500rem;
+    /*эту величину поставила для теста своего блока*/
+  }
 }
 
+.main {
+  display: flex;
+  flex-basis: 94.05%;
+  flex-direction: column;
+} /*просто блок перенесла выше*/
 .container {
   max-width: 1140px;
   min-width: 320px;
   width: 100%;
+  display: flex;
   margin: 0 auto;
+}
+@media screen and (max-width: 1088px) {
+  .container {
+    max-width: 888px;
+  }
+}
+@media screen and (max-width: 919px) {
+  .container {
+    max-width: 719px;
+  }
 }
 
 .button {
@@ -91,7 +113,20 @@ body {
   color: #000;
   font-family: "TildaSansBold";
   font-size: 2.5rem;
-  line-height: 4rem; /* 160% */
+  line-height: 4rem;
+  /*шрифт по брейкпойнтам добавила*/
+}
+@media (max-width: 900px) {
+  .title-h2 {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .title-h2 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
 }
 
 .text-p {
@@ -130,13 +165,50 @@ li {
 
 .header {
   flex-basis: 3.18%;
+
+  line-height: 2.25rem;
+  /*шрифт по брейкпойнтам добавила*/
+}
+@media (max-width: 900px) {
+  .text-p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .text-p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
 }
 
-.main {
-  display: flex;
-  flex-basis: 94.05%;
-  flex-direction: column;
+.text-p__small {
+  color: #324665;
+  font-family: "TildaSansRegular";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  /*шрифт по брейкпойнтам добавила*/
 }
+@media (max-width: 900px) {
+  .text-p__small {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .text-p__small {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+  }
+}
+
+
+.header {
+  flex-basis: 3.18%;
+}
+
 
 .block-festival {
   flex-basis: 11.25%;
@@ -151,7 +223,156 @@ li {
 }
 
 .block-competition {
+  display: flex;
   flex-basis: 15.82%;
+  justify-content: center;
+}
+.block-competition .block-competition__container {
+  display: flex;
+  flex: 1;
+  border-radius: 4.6875rem;
+  box-shadow: 0px 25px 100px 0px rgba(2, 43, 121, 0.1);
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.block-competition .block-competition__container .block-competition__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: 75%;
+  gap: 5%;
+  padding-left: 6.19rem;
+  padding-top: 3.87rem;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__content {
+    flex-basis: 60%;
+    max-width: 80%;
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+.block-competition .block-competition__container .block-competition__content .block-competition__text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 52%;
+  justify-content: space-around;
+  gap: 5%;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__content .block-competition__text {
+    text-align: center;
+    flex-basis: 40%;
+  }
+}
+.block-competition .block-competition__container .block-competition__content .block-competition__text .block-competition__title {
+  text-align: center;
+}
+.block-competition .block-competition__container .block-competition__content .block-competition__nomination {
+  flex-basis: 30%;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__content .block-competition__nomination {
+    text-align: center;
+  }
+}
+.block-competition .block-competition__container .block-competition__content .block-competition__nomination .block-competition__nomination-title {
+  color: #BC2525;
+}
+.block-competition .block-competition__container .block-competition__content .block-competition__nomination .block-competition__nomination-list .block-competition__nomination-item {
+  font-weight: 700;
+  line-height: 2.25rem;
+  color: #000;
+  list-style-type: none;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__content .block-competition__nomination .block-competition__nomination-list .block-competition__nomination-item {
+    font-weight: 600;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 500) {
+  .block-competition .block-competition__container .block-competition__content .block-competition__nomination .block-competition__nomination-list .block-competition__nomination-item {
+    font-weight: 0.6rem;
+    line-height: 1rem;
+  }
+}
+@media (max-width: 400) {
+  .block-competition .block-competition__container .block-competition__content .block-competition__nomination .block-competition__nomination-list .block-competition__nomination-item {
+    font-weight: 0.5rem;
+    line-height: 1rem;
+  }
+}
+.block-competition .block-competition__container .block-competition__content .block-competition__text-2 {
+  flex-basis: 12%;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__content .block-competition__text-2 {
+    text-align: center;
+  }
+}
+.block-competition .block-competition__container .block-competition__img-block {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__img-block {
+    flex-basis: 40%;
+  }
+}
+.block-competition .block-competition__container .block-competition__img-block .block-competition__img {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  margin-right: -20%;
+  background-image: url(../images/competition-background.png);
+  background-size: 34.8125rem 25.14531rem;
+  background-position: 60% 50%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__img-block .block-competition__img {
+    background-size: 19rem auto;
+  }
+}
+.block-competition .block-competition__container .block-competition__img-block .block-competition__img .block-competition__img-inner {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/competition-girl.png);
+  background-position: 70% 60%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__img-block .block-competition__img .block-competition__img-inner {
+    background-size: 17rem auto;
+    background-position: 40% 60%;
+  }
+}
+.block-competition .block-competition__container .block-competition__img-block .block-competition__img .block-competition__vector {
+  width: 23.17156rem;
+  height: 4.95231rem;
+  transform: rotate(-15.203deg);
+  flex-shrink: 0;
+}
+.block-competition .block-competition__container .block-competition__img-block .block-competition__buttons {
+  display: flex;
+  flex-basis: 40%;
+  justify-content: space-around;
+}
+.block-competition .block-competition__container .block-competition__img-block .block-competition__buttons .block-competition__button {
+  display: inline-block;
+  align-self: center;
+}
+.block-competition .block-competition__container .block-competition__img-block .block-competition__buttons .block-competition__button .block-competition__button-1 {
+  text-decoration: none;
 }
 
 .block-review {
@@ -166,6 +387,7 @@ li {
 .footer {
   flex-basis: 2.77%;
 }
+
 
 .block-partners {
   display: flex;
@@ -251,4 +473,295 @@ li {
 }
 .block-partners .container-column .partners__buttons .partners__buttons button {
   width: 100%;
+
+/* header start */
+.header {
+  flex-basis: 3.18%;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 3.5rem 1rem 3.5rem 0;
+}
+@media screen and (max-width: 769px) {
+  .header__container {
+    padding: 2rem 1rem 2rem 0;
+  }
+}
+
+.header__logo {
+  align-self: center;
+}
+@media screen and (max-width: 769px) {
+  .header__logo {
+    order: 1;
+  }
+}
+
+.header__img {
+  width: 4rem;
+}
+@media screen and (max-width: 769px) {
+  .header__img {
+    width: 5rem;
+  }
+}
+
+.header__nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #fff;
+  overflow: hidden;
+}
+@media screen and (max-width: 769px) {
+  .header__nav {
+    margin-top: 26rem;
+  }
+}
+@media screen and (max-width: 361px) {
+  .header__nav {
+    margin-top: 40rem;
+  }
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 40%;
+}
+@media screen and (max-width: 769px) {
+  .header__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40%;
+  }
+}
+@media screen and (max-width: 361px) {
+  .header__list {
+    padding-left: 30%;
+  }
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header__item {
+  list-style: none;
+}
+
+.header__link {
+  display: block;
+  padding: 30px;
+  color: #000;
+  text-align: center;
+  width: 8rem;
+}
+
+.header__link:hover {
+  color: #BC2525;
+}
+
+.header__nav {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+
+.header__hamb {
+  cursor: pointer;
+  float: left;
+  padding: 23px;
+} /* Style label tag */
+.header__hamb-line {
+  background: #324665;
+  border-radius: 0.1875rem;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+} /* Style span tag */
+.header__hamb-line::before,
+.header__hamb-line::after {
+  background: #324665;
+  border-radius: 0.1875rem;
+  content: "";
+  display: block;
+  height: 110%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header__hamb-line::before {
+  top: 5px;
+}
+
+.header__hamb-line::after {
+  top: -5px;
+}
+
+.header__side-menu {
+  display: none;
+} /* Hide checkbox */
+/* Toggle menu icon */
+.header__side-menu:checked ~ .header__nav {
+  max-height: 100%;
+}
+
+.header__side-menu:checked ~ .header__hamb .header__hamb-line {
+  background: transparent;
+}
+
+.header__side-menu:checked ~ .header__hamb .header__hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header__side-menu:checked ~ .header__hamb .header__hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .header__nav {
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .header__item {
+    float: left;
+  }
+  .header__link:hover {
+    background-color: transparent;
+    color: #BC2525;
+  }
+  .header__hamb {
+    display: none;
+  }
+}
+/* button */
+@media screen and (max-width: 769px) {
+  .header__btn-container {
+    order: 2;
+  }
+}
+
+.header__btn {
+  display: inline-block;
+  /* margin: 0 14px 0 12px; */
+}
+
+/* header end */
+/* Блок достижения block-progress*/
+.block-progress {
+  background-color: #F9F6F1;
+}
+
+.container-two {
+  display: flex;
+  flex-direction: column;
+}
+.container-two .block-progress__main-wrapper {
+  display: flex;
+}
+.container-two .block-progress__main-wrapper .block-progress__wrapper-two .block-progress__img {
+  max-width: 100%;
+  width: 100%;
+  padding-top: 10%;
+}
+
+/*Часть с основным текстом block-progress*/
+.block-progress__wrapper {
+  max-width: 50%;
+  width: 100%;
+  padding-top: 7%;
+}
+.block-progress__wrapper .block-progress__title {
+  margin-bottom: 1.38rem;
+}
+.block-progress__wrapper .block-progress__text {
+  max-width: 100%;
+  width: 100%;
+  height: 80%;
+  color: #324665;
+  font-family: "TildaSansRegular";
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.25rem;
+  margin-bottom: 3rem;
+}
+
+/*Часть с карточками проектов блока block-progress*/
+.cards {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.cards .card__title {
+  margin-bottom: 8px;
+  font-family: "TildaSansExtraBold";
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: normal;
+  color: #000;
+  text-align: center;
+}
+.cards .card__text {
+  font-family: "TildaSansRegular";
+  color: #324665;
+  font-weight: 400;
+  font-size: 1.0625rem;
+}
+
+.block-projects__wrapper .card {
+  max-width: 220px;
+  width: 100%;
+}
+.block-projects__wrapper .card .card__wrapper {
+  margin: 5%;
+  border: 3px solid #e7dcc8;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.block-projects__wrapper .card .card__wrapper .card__img {
+  padding: 20% 2% 20% 2%;
+}
+.block-projects__wrapper .card .card__wrapper .card__img-size {
+  max-width: 100%;
+  width: 100%;
+  min-height: 200px;
+}
+.block-projects__wrapper .card .card__wrapper .title-h3 {
+  margin-bottom: 1rem;
+}
+.block-projects__wrapper .card .card__wrapper .card__text {
+  margin-bottom: 1rem;
+  padding: 5% 5% 0 5%;
+}
+.block-projects__wrapper .card .card__wrapper .text-p__block {
+  margin-bottom: 3.88rem;
+}
+.block-projects__wrapper .card .card__wrapper .card__link {
+  margin-bottom: 1rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #BC2525;
 }/*# sourceMappingURL=style.css.map */
