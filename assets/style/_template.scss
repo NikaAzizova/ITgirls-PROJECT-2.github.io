@@ -84,11 +84,14 @@ body {
         /*эту величину поставила для теста своего блока*/
     }
 }
+
 .main {
     display: flex;
     flex-basis: 94.05%;
     flex-direction: column;
-}  /*просто блок перенесла выше*/
+}
+
+/*просто блок перенесла выше*/
 
 .container {
     max-width: 1140px;
@@ -357,7 +360,54 @@ body {
 }
 
 .block-help {
-    flex-basis: 20.30%;
+    flex-basis: 12%;
+    display: flex;
+
+    .block-help__container {
+        display: flex;
+        flex: 1;
+        gap: 5%;
+        @media (max-width: 900px) {
+            flex-direction: column;
+
+        }
+
+        .block-help__content {
+            flex-basis: 50%;
+            display: flex;
+            flex-direction: column;
+
+            .block-help__text {
+                flex-basis: 60%;
+                display: flex;
+                flex-direction: column;
+                gap: 10%;
+            }
+
+            .block-help__buttoms {
+                flex-basis: 40%;
+                display: flex;
+                justify-content: space-between;
+
+                .block-help__button {
+                    display: inline-block;
+                    align-self: center;
+
+                    .block-help__button-1 {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .block-help__img {
+            flex-basis: 50%;
+            .block-help__image {
+                width: 100%;
+            }
+        }
+    }
+
     /*может блок в дальнейшем будет меньше, пока ставлю по макету*/
 }
 

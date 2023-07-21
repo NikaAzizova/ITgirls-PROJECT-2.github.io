@@ -66,7 +66,9 @@ body {
   display: flex;
   flex-basis: 94.05%;
   flex-direction: column;
-} /*просто блок перенесла выше*/
+}
+
+/*просто блок перенесла выше*/
 .container {
   max-width: 1140px;
   min-width: 320px;
@@ -328,8 +330,48 @@ body {
 }
 
 .block-help {
-  flex-basis: 20.3%;
+  flex-basis: 12%;
+  display: flex;
   /*может блок в дальнейшем будет меньше, пока ставлю по макету*/
+}
+.block-help .block-help__container {
+  display: flex;
+  flex: 1;
+  gap: 5%;
+}
+@media (max-width: 900px) {
+  .block-help .block-help__container {
+    flex-direction: column;
+  }
+}
+.block-help .block-help__container .block-help__content {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.block-help .block-help__container .block-help__content .block-help__text {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+.block-help .block-help__container .block-help__content .block-help__buttoms {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.block-help .block-help__container .block-help__content .block-help__buttoms .block-help__button {
+  display: inline-block;
+  align-self: center;
+}
+.block-help .block-help__container .block-help__content .block-help__buttoms .block-help__button .block-help__button-1 {
+  text-decoration: none;
+}
+.block-help .block-help__container .block-help__img {
+  flex-basis: 50%;
+}
+.block-help .block-help__container .block-help__img .block-help__image {
+  width: 100%;
 }
 
 .footer {
@@ -524,6 +566,88 @@ body {
 .header__btn {
   display: inline-block;
   /* margin: 0 14px 0 12px; */
+}
+.block-festival {
+  flex-basis: 11.25%;
+}
+.block-festival__container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.block-festival__text {
+  font-family: 'TildaSansBold', sans-serif;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /* flex-basis: 40%; */
+}
+
+.block-festival__text-p {
+  font-family: 'TildaSansRegular', sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 56px;
+  text-align: center;
+}
+.block-festival__content {
+  background-position: top center;
+  background-size: initial;
+  padding-bottom: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.block-festival__why {
+  margin-top: 60px;
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(3, 312px);
+  justify-content: center;
+  /* flex-basis: 40%; */
+}
+
+.block-festival__why-item {
+  text-align: center;
+}
+
+.block-festival__why-item-title {
+  font-family: 'TildaSansMedium', sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 24px 0;
+}
+
+.block-festival__why-item-text {
+  font-family: 'TildaSansRegular', sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.block-festival__why-item-img {
+  height: 200px;
+}
+
+.block-festival__why-item-image img {
+  max-width: 100%;
+}
+
+.block-festival__buttons {
+  display: flex;
+  flex-basis: 20%;
+  justify-content: space-around;
+}
+
+.block-festival__button {
+      display: inline-block;
+      align-self: center;
+}
+
+.block-festival__button-1 {
+  text-decoration: none;
 }
 
 /* header end *//*# sourceMappingURL=style.css.map */
