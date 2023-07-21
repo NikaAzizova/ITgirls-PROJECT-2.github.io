@@ -33,21 +33,27 @@
 
 html {
   font-size: 100%;
-  /*@media (max-width: 900px) {
-      font-size: 90%;
+  /*не работает с указанным размером шрифта*/
+}
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 90%;
   }
-
-  @media (max-width: 700px) {
-      font-size: 80%;
+}
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 80%;
   }
-
-  @media (max-width: 500px) {
-      font-size: 70%;
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 70%;
   }
-
-  @media (max-width: 400px) {
-      font-size: 60%;
-  } не работает с указанным размером шрифта*/
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 60%;
+  }
 }
 
 body {
@@ -73,6 +79,16 @@ body {
   width: 100%;
   display: flex;
   margin: 0 auto;
+}
+@media screen and (max-width: 1088px) {
+  .container {
+    max-width: 888px;
+  }
+}
+@media screen and (max-width: 919px) {
+  .container {
+    max-width: 719px;
+  }
 }
 
 .button {
@@ -526,4 +542,104 @@ body {
   /* margin: 0 14px 0 12px; */
 }
 
-/* header end *//*# sourceMappingURL=style.css.map */
+/* header end */
+/* Блок достижения block-progress*/
+.block-progress {
+  background-color: #F9F6F1;
+}
+
+.container-two {
+  display: flex;
+  flex-direction: column;
+}
+.container-two .block-progress__main-wrapper {
+  display: flex;
+}
+.container-two .block-progress__main-wrapper .block-progress__wrapper-two .block-progress__img {
+  max-width: 100%;
+  width: 100%;
+  padding-top: 10%;
+}
+
+/*Часть с основным текстом block-progress*/
+.block-progress__wrapper {
+  max-width: 50%;
+  width: 100%;
+  padding-top: 7%;
+}
+.block-progress__wrapper .block-progress__title {
+  margin-bottom: 1.38rem;
+}
+.block-progress__wrapper .block-progress__text {
+  max-width: 100%;
+  width: 100%;
+  height: 80%;
+  color: #324665;
+  font-family: "TildaSansRegular";
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.25rem;
+  margin-bottom: 3rem;
+}
+
+/*Часть с карточками проектов блока block-progress*/
+.cards {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.cards .card__title {
+  margin-bottom: 8px;
+  font-family: "TildaSansExtraBold";
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: normal;
+  color: #000;
+  text-align: center;
+}
+.cards .card__text {
+  font-family: "TildaSansRegular";
+  color: #324665;
+  font-weight: 400;
+  font-size: 1.0625rem;
+}
+
+.block-projects__wrapper .card {
+  max-width: 220px;
+  width: 100%;
+}
+.block-projects__wrapper .card .card__wrapper {
+  margin: 5%;
+  border: 3px solid #e7dcc8;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.block-projects__wrapper .card .card__wrapper .card__img {
+  padding: 20% 2% 20% 2%;
+}
+.block-projects__wrapper .card .card__wrapper .card__img-size {
+  max-width: 100%;
+  width: 100%;
+  min-height: 200px;
+}
+.block-projects__wrapper .card .card__wrapper .title-h3 {
+  margin-bottom: 1rem;
+}
+.block-projects__wrapper .card .card__wrapper .card__text {
+  margin-bottom: 1rem;
+  padding: 5% 5% 0 5%;
+}
+.block-projects__wrapper .card .card__wrapper .text-p__block {
+  margin-bottom: 3.88rem;
+}
+.block-projects__wrapper .card .card__wrapper .card__link {
+  margin-bottom: 1rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #BC2525;
+}/*# sourceMappingURL=style.css.map */
