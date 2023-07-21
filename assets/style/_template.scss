@@ -57,21 +57,21 @@ $font3: "TildaSansRegular";
 html {
     font-size: 100%;
 
-    /*@media (max-width: 900px) {
+    @media screen and (max-width: 900px) {
         font-size: 90%;
     }
 
-    @media (max-width: 700px) {
+    @media screen and (max-width: 700px) {
         font-size: 80%;
     }
 
-    @media (max-width: 500px) {
+    @media screen and (max-width: 500px) {
         font-size: 70%;
     }
 
-    @media (max-width: 400px) {
+    @media screen and (max-width: 400px) {
         font-size: 60%;
-    } не работает с указанным размером шрифта*/
+    } /*не работает с указанным размером шрифта*/
 }
 
 body {
@@ -99,6 +99,14 @@ body {
     width: 100%;
     display: flex;
     margin: 0 auto;
+    @media screen and (max-width: 1088px) {
+        max-width: 888px;
+        
+    }
+    @media screen and (max-width: 919px) {
+        max-width: 719px;
+        
+    }
 }
 
 .button {
@@ -141,7 +149,7 @@ body {
     color: $text;
     font-family: $font3;
     font-size: 1.375rem;
-    line-height: 2.25rem;
+    line-height: 2.25rem; /* 163.636% */
 
     @media (max-width: 900px) {
         font-size: 1rem;
@@ -155,6 +163,48 @@ body {
 
     /*шрифт по брейкпойнтам добавила*/
 }
+
+.text-p__small {
+    color: $text;
+    font-family: $font3;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.375rem; /* 137.5% */
+
+    @media (max-width: 900px) {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
+
+    /*шрифт по брейкпойнтам добавила*/
+}
+
+
+a,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+
 
 .text-p__small {
     color: $text;
@@ -183,13 +233,73 @@ body {
 .block-festival {
     flex-basis: 11.25%;
 }
+.block-festival__container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+.block-festival__text {
+    font-family: 'TildaSansBold', sans-serif;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  
+  .block-festival__text-p {
+    font-family: 'TildaSansRegular', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 56px;
+    text-align: center;
+  }
+  .block-festival__content {
+    background-position: top center;
+    background-size: initial;
+    padding-bottom: 180px;
+}
+  
+  .block-festival__why {
+    margin-top: 60px;
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(3, 312px);
+    justify-content: center;
+  }
+  
+  .block-festival__why-item {
+    text-align: center;
+  }
+  
+  .block-festival__why-item-title {
+    font-family: 'TildaSansMedium', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 24px 0;
+  }
+  
+  .block-festival__why-item-text {
+    font-family: 'TildaSansRegular', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .block-festival__why-item-img {
+    height: 200px;
+}
+
+.block-festival__why-item-image img {
+    max-width: 100%;
+}
+
 
 .block-progress {
     flex-basis: 15.37%;
 }
 
 .block-partners {
-    flex-basis: 9%;
+    flex-basis: 11%;
 }
 
 .block-competition {
