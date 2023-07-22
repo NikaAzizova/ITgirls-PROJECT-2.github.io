@@ -599,7 +599,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  width: 40%;
 }
 @media screen and (max-width: 769px) {
   .header__list {
@@ -629,7 +628,6 @@ li {
   padding: 30px;
   color: #000;
   text-align: center;
-  width: 8rem;
 }
 
 .header__link:hover {
@@ -725,6 +723,7 @@ li {
 
 .header__btn {
   display: inline-block;
+  color: #f1f5fa;
   /* margin: 0 14px 0 12px; */
 }
 
