@@ -94,11 +94,11 @@ body {
 .button {
   padding: 0.75rem 2.5rem;
   border-radius: 1.5625rem;
-  background: #BC2525;
+  background: #bc2525;
   border: none;
   -webkit-backdrop-filter: blur(16px);
           backdrop-filter: blur(16px);
-  color: #F1F5FA;
+  color: #f1f5fa;
   font-family: "TildaSansBold";
   font-size: 1.125rem;
   font-style: normal;
@@ -106,7 +106,7 @@ body {
 }
 
 .button:hover {
-  background: #D72424;
+  background: #d72424;
 }
 
 .title-h2 {
@@ -211,7 +211,12 @@ li {
 }
 
 .header {
-  flex-basis: 3.18%;
+  flex-basis: 2%;
+}
+@media screen and (max-width: 769px) {
+  .header {
+    flex-basis: 1%;
+  }
 }
 
 .block-festival {
@@ -347,7 +352,7 @@ li {
   }
 }
 .block-competition .block-competition__container .block-competition__content .block-competition__nomination .block-competition__nomination-title {
-  color: #BC2525;
+  color: #bc2525;
 }
 .block-competition .block-competition__container .block-competition__content .block-competition__nomination .block-competition__nomination-list .block-competition__nomination-item {
   font-weight: 700;
@@ -459,7 +464,7 @@ li {
   align-items: center;
   padding-top: 3%;
   padding-bottom: 2%;
-  background: #F9F6F1;
+  background: #f9f6f1;
 }
 .block-partners .container-column {
   max-width: 1140px;
@@ -541,11 +546,11 @@ li {
 
 /* header start */
 .header {
-  flex-basis: 3.18%;
   background-color: #ffffff;
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 5;
 }
 
 .header__container {
@@ -553,14 +558,7 @@ li {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  padding: 3.5rem 1rem 3.5rem 0;
 }
-@media screen and (max-width: 769px) {
-  .header__container {
-    padding: 2rem 1rem 2rem 0;
-  }
-}
-
 .header__logo {
   align-self: center;
 }
@@ -601,7 +599,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  width: 40%;
 }
 @media screen and (max-width: 769px) {
   .header__list {
@@ -623,6 +620,7 @@ li {
 
 .header__item {
   list-style: none;
+  font-family: "TildaSansExtraBold";
 }
 
 .header__link {
@@ -630,11 +628,10 @@ li {
   padding: 30px;
   color: #000;
   text-align: center;
-  width: 8rem;
 }
 
 .header__link:hover {
-  color: #BC2525;
+  color: #bc2525;
 }
 
 .header__nav {
@@ -711,7 +708,7 @@ li {
   }
   .header__link:hover {
     background-color: transparent;
-    color: #BC2525;
+    color: #bc2525;
   }
   .header__hamb {
     display: none;
@@ -726,13 +723,14 @@ li {
 
 .header__btn {
   display: inline-block;
+  color: #f1f5fa;
   /* margin: 0 14px 0 12px; */
 }
 
 /* header end */
 /* Блок достижения block-progress*/
 .block-progress {
-  background-color: #F9F6F1;
+  background-color: #f9f6f1;
 }
 
 .container-two {
@@ -828,5 +826,5 @@ li {
   display: block;
   text-align: center;
   text-decoration: none;
-  color: #BC2525;
+  color: #bc2525;
 }/*# sourceMappingURL=style.css.map */
