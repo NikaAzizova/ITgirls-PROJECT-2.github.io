@@ -182,3 +182,95 @@
   /* margin: 0 14px 0 12px; */
 }
 /* header end */
+
+.block-festival {
+  flex-basis: 11.25%;
+
+  .block-festival__container {
+    max-width: 71.25rem;
+    margin: 0 auto;
+    .block-festival__content {
+      background-position: top center;
+      background-size: initial;
+      padding-bottom: 11.25rem;
+      .block-festival__text {
+        font-family: $font;
+        font-size: 4rem;
+        line-height: 5rem;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        .block-festival__video {
+          min-height: 60vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .block-festival__video-item {
+            width: 60rem;
+            padding: 1.5rem 0;
+          }
+        }
+        .block-festival__text-p {
+          font-family: $font3;
+          font-size: 1.5rem;
+          line-height: 1.8125rem;
+          margin-bottom: 3.5rem;
+          text-align: center;
+        }
+      }
+      .block-festival__logo-img {
+        margin-right: 0.625rem;
+        margin-bottom: 0.625rem;
+        height: 9.375rem;
+        .block-festival__logo-img img {
+          max-width: 100%;
+        }
+      }
+    }
+    .block-festival__why {
+      margin-top: 3.75rem;
+      display: grid;
+      gap: 5rem;
+      grid-template-columns: repeat(3, 312px);
+      justify-content: center;
+      .block-festival__why-item {
+        text-align: center;
+        .block-festival__why-item-img {
+          height: 13.125rem;
+          max-width: 100%;
+        }
+        .block-festival__why-item-title {
+          font-family: 'TildaSansMedium', sans-serif;
+          font-size: 1.5rem;
+          line-height: 1.8125rem;
+          padding: 1.5rem 0;
+        }
+        .block-festival__why-item-text {
+          font-family: $font3;
+          font-size: 1rem;
+          line-height: 140%;
+          .block-festival__why-item-text-p {
+            text-align: left;
+            font-size: 20px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+
+    .block-festival__buttons {
+      display: flex;
+      flex-basis: 40%;
+      justify-content: space-around;
+      margin: 3.75rem 0 ;
+      .block-festival__button {
+        display: inline-block;
+        align-self: center;
+        .block-festival__button-1 {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
