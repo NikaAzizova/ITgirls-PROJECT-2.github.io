@@ -304,7 +304,7 @@
     .block-festival__content {
       background-position: top center;
       background-size: initial;
-      // padding-bottom: 11.25rem;
+      margin-bottom: 1rem;
 
       .block-festival__text {
         font-family: $font;
@@ -315,7 +315,6 @@
         text-transform: uppercase;
 
         .block-festival__video {
-          // min-height: 60vh;
           display: flex;
           flex-direction: column;
           justify-content: center;
