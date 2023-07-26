@@ -90,6 +90,36 @@ body {
     max-width: 719px;
   }
 }
+@media screen and (max-width: 828px) {
+  .container {
+    max-width: 728px;
+  }
+}
+@media screen and (max-width: 789px) {
+  .container {
+    max-width: 660px;
+  }
+}
+@media screen and (max-width: 752px) {
+  .container {
+    max-width: 630px;
+  }
+}
+@media screen and (max-width: 652px) {
+  .container {
+    max-width: 520px;
+  }
+}
+@media screen and (max-width: 552px) {
+  .container {
+    max-width: 432px;
+  }
+}
+@media screen and (max-width: 452px) {
+  .container {
+    max-width: 332px;
+  }
+}
 
 .button {
   padding: 0.75rem 2.5rem;
@@ -296,10 +326,9 @@ li {
   flex-basis: 24.86%;
 }
 
-.block-help {
+/*.block-help {
+  // flex-basis: 20.3%;
   /*может блок в дальнейшем будет меньше, пока ставлю по макету*/
-}
-
 .footer {
   flex-basis: 2.77%;
 }
@@ -489,7 +518,9 @@ li {
   cursor: pointer;
   float: left;
   padding: 23px;
-} /* Style label tag */
+}
+
+/* Style label tag */
 .header__hamb-line {
   background: #324665;
   border-radius: 0.1875rem;
@@ -497,7 +528,9 @@ li {
   height: 2px;
   position: relative;
   width: 24px;
-} /* Style span tag */
+}
+
+/* Style span tag */
 .header__hamb-line::before,
 .header__hamb-line::after {
   background: #324665;
@@ -520,7 +553,9 @@ li {
 
 .header__side-menu {
   display: none;
-} /* Hide checkbox */
+}
+
+/* Hide checkbox */
 /* Toggle menu icon */
 .header__side-menu:checked ~ .header__nav {
   max-height: 100%;
@@ -965,4 +1000,120 @@ li {
 }
 .block-help .block-help__container .block-help__img .block-help__image {
   width: 100%;
+}
+
+/*Блок с футером*/
+.footer {
+  background-color: #000;
+}
+.footer .footer-container {
+  display: block;
+}
+
+.footer__wrapper {
+  min-height: 100px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 39px;
+  /* Часть с лого */
+}
+.footer__wrapper .footer__logo {
+  flex-basis: 10%;
+}
+.footer__wrapper .footer__logo .logo-img {
+  width: 4rem;
+}
+
+/* Часть с меню и ссылками */
+.footer__nav {
+  flex-grow: 1;
+}
+@media screen and (max-width: 941px) {
+  .footer__nav {
+    display: none;
+  }
+}
+.footer__nav .footer__menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer__nav .footer__menu .footer__item {
+  list-style: none;
+}
+.footer__nav .footer__menu .footer__item .footer__link {
+  color: #FFFFFF;
+  font-family: "TildaSansBold";
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Часть с иконками */
+.icons-box {
+  width: 2rem;
+  height: 2rem;
+  flex-basis: 13%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 918px) {
+  .icons-box {
+    flex-basis: 20%;
+  }
+}
+@media screen and (max-width: 655px) {
+  .icons-box {
+    flex-basis: 25%;
+  }
+}
+@media screen and (max-width: 555px) {
+  .icons-box {
+    flex-basis: 25%;
+  }
+}
+@media screen and (max-width: 455px) {
+  .icons-box {
+    flex-basis: 25%;
+  }
+}
+@media screen and (max-width: 371px) {
+  .icons-box {
+    flex-basis: 25%;
+  }
+}
+
+/*Часть с нижней строчкой надписей*/
+.footer__second-wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 39px;
+}
+@media screen and (max-width: 589px) {
+  .footer__second-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.footer__second-wrapper .text-line {
+  color: #A2A2A2;
+  font-family: "TildaSansRegular";
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.footer__second-wrapper .footer__secont-text {
+  display: flex;
+}
+.footer__second-wrapper .footer__secont-text .block__text-one {
+  margin-right: 16px;
+}
+
+.footer .footer__third-text {
+  display: flex;
+}
+.footer .footer__third-text .text-line__last-block {
+  margin-right: 8px;
+}
+.footer .footer__third-text .footer__last-icon {
+  height: 17px;
 }/*# sourceMappingURL=style.css.map */

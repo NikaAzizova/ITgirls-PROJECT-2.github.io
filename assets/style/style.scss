@@ -81,6 +81,7 @@
         }
       }
     }
+
     .partners__buttons {
       display: flex;
       justify-content: center;
@@ -142,6 +143,7 @@
   @media screen and (max-width: 769px) {
     margin-top: 26rem; //4rem
   }
+
   @media screen and (max-width: 361px) {
     margin-top: 40rem; //4rem
   }
@@ -190,11 +192,14 @@
   max-height: 0;
   transition: max-height 0.5s ease-out;
 }
+
 .header__hamb {
   cursor: pointer;
   float: left;
   padding: 23px;
-} /* Style label tag */
+}
+
+/* Style label tag */
 
 .header__hamb-line {
   background: $text;
@@ -203,7 +208,9 @@
   height: 2px;
   position: relative;
   width: 24px;
-} /* Style span tag */
+}
+
+/* Style span tag */
 
 .header__hamb-line::before,
 .header__hamb-line::after {
@@ -216,29 +223,36 @@
   transition: all 0.2s ease-out;
   width: 100%;
 }
+
 .header__hamb-line::before {
   top: 5px;
 }
+
 .header__hamb-line::after {
   top: -5px;
 }
 
 .header__side-menu {
   display: none;
-} /* Hide checkbox */
+}
+
+/* Hide checkbox */
 
 /* Toggle menu icon */
-.header__side-menu:checked ~ .header__nav {
+.header__side-menu:checked~.header__nav {
   max-height: 100%;
 }
-.header__side-menu:checked ~ .header__hamb .header__hamb-line {
+
+.header__side-menu:checked~.header__hamb .header__hamb-line {
   background: transparent;
 }
-.header__side-menu:checked ~ .header__hamb .header__hamb-line::before {
+
+.header__side-menu:checked~.header__hamb .header__hamb-line::before {
   transform: rotate(-45deg);
   top: 0;
 }
-.header__side-menu:checked ~ .header__hamb .header__hamb-line::after {
+
+.header__side-menu:checked~.header__hamb .header__hamb-line::after {
   transform: rotate(45deg);
   top: 0;
 }
@@ -278,16 +292,20 @@
   color: $btn-text;
   /* margin: 0 14px 0 12px; */
 }
+
 /* header end */
 .block-festival {
   flex-basis: 11.25%;
-    .block-festival__container {
+
+  .block-festival__container {
     max-width: 71.25rem;
     margin: 0 auto;
-      .block-festival__content {
+
+    .block-festival__content {
       background-position: top center;
       background-size: initial;
       padding-bottom: 11.25rem;
+
       .block-festival__text {
         font-family: $font;
         font-size: 4rem;
@@ -295,12 +313,14 @@
         text-align: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+
         .block-festival__video {
           min-height: 60vh;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+
           .block-festival__video-item {
             width: 100%;
             height: auto;
@@ -309,6 +329,7 @@
 
           }
         }
+
         .block-festival__text-p {
           font-family: $font3;
           font-size: 1.5rem;
@@ -317,15 +338,18 @@
           text-align: center;
         }
       }
+
       .block-festival__logo-img {
         margin-right: 0.625rem;
         margin-bottom: 0.625rem;
         height: 9.375rem;
+
         .block-festival__logo-img img {
           max-width: 100%;
         }
       }
     }
+
     .block-festival__why {
       margin-top: 2.75rem;
       display: grid;
@@ -339,17 +363,20 @@
         border-radius: 15px;
         background-color: #ffffff;
         text-align: center;
+
         .block-festival__why-item-img {
           border-radius: 15px;
           height: 13.125rem;
           max-width: 100%;
         }
+
         .block-festival__why-item-title {
           font-family: 'TildaSansMedium', sans-serif;
           font-size: 1.5rem;
           line-height: 1.8125rem;
           padding: 1.5rem 0;
         }
+
         .block-festival__why-item-text {
           font-family: $font3;
           font-size: 1rem;
@@ -364,15 +391,16 @@
         }
       }
     }
+
     .block-festival__buttons {
       display: flex;
       justify-content: center;
       margin: 3.73rem auto;
       column-gap: 10%;
       text-decoration: none;
-      }
     }
   }
+}
 
 /* Блок достижения block-progress*/
 .block-progress {
@@ -382,8 +410,10 @@
 .container-two {
   display: flex;
   flex-direction: column;
+
   .block-progress__main-wrapper {
     display: flex;
+
     .block-progress__wrapper-two {
       .block-progress__img {
         max-width: 100%;
@@ -417,6 +447,7 @@
     margin-bottom: 3rem;
   }
 }
+
 /*Часть с карточками проектов блока block-progress*/
 .cards {
   max-width: 100%;
@@ -435,6 +466,7 @@
     color: $header;
     text-align: center;
   }
+
   .card__text {
     font-family: $font3;
     color: $text;
@@ -457,21 +489,26 @@
       .card__img {
         padding: 20% 2% 20% 2%;
       }
+
       .card__img-size {
         max-width: 100%;
         width: 100%;
         min-height: 200px;
       }
+
       .title-h3 {
         margin-bottom: 1rem;
       }
+
       .card__text {
         margin-bottom: 1rem;
         padding: 5% 5% 0 5%;
       }
+
       .text-p__block {
         margin-bottom: 3.88rem;
       }
+
       .card__link {
         margin-bottom: 1rem;
         display: block;
@@ -482,6 +519,7 @@
     }
   }
 }
+
 .block-competition {
   display: flex;
   flex-basis: 25%;
@@ -489,208 +527,337 @@
   background: $background;
 
   .block-competition__container {
+    display: flex;
+    flex: 1;
+    background: white;
+    border-radius: 4.6875rem;
+    box-shadow: 0px 25px 100px 0px rgba(2, 43, 121, 0.10);
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .block-competition__content {
       display: flex;
-      flex: 1;
-      background: white;
-      border-radius: 4.6875rem;
-      box-shadow: 0px 25px 100px 0px rgba(2, 43, 121, 0.10);
+      flex-direction: column;
+      justify-content: space-around;
+      flex-basis: 75%;
+      gap: 5%;
+      padding-left: 6.19rem;
+      padding-top: 3.87rem;
 
       @media (max-width: 900px) {
-          flex-direction: column;
-          justify-content: space-around;
+        flex-basis: 60%;
+        max-width: 80%;
+        padding-left: 0;
+        padding-top: 0;
+      }
+
+      .block-competition__text {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 52%;
+        justify-content: space-around;
+        gap: 5%;
+
+        @media (max-width: 900px) {
+          text-align: center;
+          flex-basis: 40%;
+        }
+
+        .block-competition__title {
+          text-align: center;
+        }
+      }
+
+      .block-competition__nomination {
+        flex-basis: 30%;
+
+        @media (max-width: 900px) {
+          text-align: center;
+        }
+
+        .block-competition__nomination-title {
+          color: $btn;
+
+        }
+
+        .block-competition__nomination-list {
+          .block-competition__nomination-item {
+            font-weight: 700;
+            line-height: 2.25rem;
+            color: $header;
+            list-style-type: none;
+
+            @media (max-width: 900px) {
+              font-weight: 600;
+              line-height: 2rem;
+            }
+
+            @media (max-width: 500) {
+              font-weight: 0.6rem;
+              line-height: 1rem;
+            }
+
+            @media (max-width: 400) {
+              font-weight: 0.5rem;
+              line-height: 1rem;
+            }
+          }
+        }
+
+      }
+
+      .block-competition__text-2 {
+        flex-basis: 12%;
+
+        @media (max-width: 900px) {
+          text-align: center;
+        }
+      }
+    }
+
+    .block-competition__img-block {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 60%;
+
+      @media (max-width: 900px) {
+        flex-basis: 40%;
+      }
+
+      .block-competition__img {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        margin-right: -20%;
+        background-image: url(../images/competition-background.png);
+        background-size: 34.8125rem 25.14531rem;
+        background-position: 60% 50%;
+        background-repeat: no-repeat;
+
+        @media (max-width: 900px) {
+          background-size: 19rem auto;
+        }
+
+        .block-competition__img-inner {
+          display: flex;
+          flex-basis: 50%;
           align-items: center;
-      }
-
-      .block-competition__content {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          flex-basis: 75%;
-          gap: 5%;
-          padding-left: 6.19rem;
-          padding-top: 3.87rem;
+          justify-content: center;
+          background-image: url(../images/competition-girl.png);
+          background-position: 70% 60%;
+          background-repeat: no-repeat;
 
           @media (max-width: 900px) {
-              flex-basis: 60%;
-              max-width: 80%;
-              padding-left: 0;
-              padding-top: 0;
+            background-size: 17rem auto;
+            background-position: 40% 60%;
           }
+        }
 
-          .block-competition__text {
-              display: flex;
-              flex-direction: column;
-              flex-basis: 52%;
-              justify-content: space-around;
-              gap: 5%;
-
-              @media (max-width: 900px) {
-                  text-align: center;
-                  flex-basis: 40%;
-              }
-
-              .block-competition__title {
-                  text-align: center;
-              }
-          }
-
-          .block-competition__nomination {
-              flex-basis: 30%;
-
-              @media (max-width: 900px) {
-                  text-align: center;
-              }
-
-              .block-competition__nomination-title {
-                  color: $btn;
-
-              }
-
-              .block-competition__nomination-list {
-                  .block-competition__nomination-item {
-                      font-weight: 700;
-                      line-height: 2.25rem;
-                      color: $header;
-                      list-style-type: none;
-
-                      @media (max-width: 900px) {
-                          font-weight: 600;
-                          line-height: 2rem;
-                      }
-
-                      @media (max-width: 500) {
-                          font-weight: 0.6rem;
-                          line-height: 1rem;
-                      }
-
-                      @media (max-width: 400) {
-                          font-weight: 0.5rem;
-                          line-height: 1rem;
-                      }
-                  }
-              }
-
-          }
-
-          .block-competition__text-2 {
-              flex-basis: 12%;
-
-              @media (max-width: 900px) {
-                  text-align: center;
-              }
-          }
+        .block-competition__vector {
+          width: 23.17156rem;
+          height: 4.95231rem;
+          transform: rotate(-15.203deg);
+          flex-shrink: 0;
+        }
       }
 
-      .block-competition__img-block {
-          display: flex;
-          flex-direction: column;
-          flex-basis: 60%;
+      .block-competition__buttons {
+        display: flex;
+        flex-basis: 40%;
+        justify-content: space-around;
 
-          @media (max-width: 900px) {
-              flex-basis: 40%;
+        .block-competition__button {
+          display: inline-block;
+          align-self: center;
+
+          .block-competition__button-1 {
+            text-decoration: none;
+
           }
-
-          .block-competition__img {
-              display: flex;
-              flex-basis: 100%;
-              justify-content: center;
-              margin-right: -20%;
-              background-image: url(../images/competition-background.png);
-              background-size: 34.8125rem 25.14531rem;
-              background-position: 60% 50%;
-              background-repeat: no-repeat;
-
-              @media (max-width: 900px) {
-                  background-size: 19rem auto;
-              }
-
-              .block-competition__img-inner {
-                  display: flex;
-                  flex-basis: 50%;
-                  align-items: center;
-                  justify-content: center;
-                  background-image: url(../images/competition-girl.png);
-                  background-position: 70% 60%;
-                  background-repeat: no-repeat;
-
-                  @media (max-width: 900px) {
-                      background-size: 17rem auto;
-                      background-position: 40% 60%;
-                  }
-              }
-
-              .block-competition__vector {
-                  width: 23.17156rem;
-                  height: 4.95231rem;
-                  transform: rotate(-15.203deg);
-                  flex-shrink: 0;
-              }
-          }
-
-          .block-competition__buttons {
-              display: flex;
-              flex-basis: 40%;
-              justify-content: space-around;
-
-              .block-competition__button {
-                  display: inline-block;
-                  align-self: center;
-
-                  .block-competition__button-1 {
-                      text-decoration: none;
-
-                  }
-              }
-          }
+        }
       }
+    }
   }
 }
+
 .block-help {
   flex-basis: 12%;
   display: flex;
 
   .block-help__container {
+    display: flex;
+    flex: 1;
+    gap: 5%;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+
+    }
+
+    .block-help__content {
+      flex-basis: 50%;
       display: flex;
-      flex: 1;
-      gap: 5%;
-      @media (max-width: 900px) {
-          flex-direction: column;
+      flex-direction: column;
+
+      .block-help__text {
+        flex-basis: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+      }
+
+      .block-help__buttoms {
+        flex-basis: 40%;
+        display: flex;
+        justify-content: space-between;
+
+        .block-help__button {
+          display: inline-block;
+          align-self: center;
+
+          .block-help__button-1 {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .block-help__img {
+      flex-basis: 50%;
+
+      .block-help__image {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*Блок с футером*/
+.footer {
+  background-color: $header;
+
+  .footer-container {
+    display: block;
+
+  }
+}
+
+.footer__wrapper {
+  min-height: 100px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 39px;
+
+  /* Часть с лого */
+  .footer__logo {
+    flex-basis: 10%;
+
+    .logo-img {
+      width: 4rem;
+    }
+  }
+}
+
+/* Часть с меню и ссылками */
+.footer__nav {
+  flex-grow: 1;
+
+  @media screen and (max-width: 941px) {
+    display: none;
+  }
+
+  .footer__menu {
+    display: flex;
+    justify-content: space-evenly;
+
+    .footer__item {
+      list-style: none;
+
+      .footer__link {
+        color: #FFFFFF;
+        font-family: $font;
+        font-weight: 700;
+        font-size: 1rem;
 
       }
 
-      .block-help__content {
-          flex-basis: 50%;
-          display: flex;
-          flex-direction: column;
+    }
+  }
+}
 
-          .block-help__text {
-              flex-basis: 60%;
-              display: flex;
-              flex-direction: column;
-              gap: 10%;
-          }
+/* Часть с иконками */
+.icons-box {
+  width: 2rem;
+  height: 2rem;
+  flex-basis: 13%;
+  display: flex;
+  justify-content: space-between;
 
-          .block-help__buttoms {
-              flex-basis: 40%;
-              display: flex;
-              justify-content: space-between;
+  @media screen and (max-width: 918px) {
+    flex-basis: 20%;
+  }
 
-              .block-help__button {
-                  display: inline-block;
-                  align-self: center;
+  @media screen and (max-width: 655px) {
+    flex-basis: 25%;
+  }
 
-                  .block-help__button-1 {
-                      text-decoration: none;
-                  }
-              }
-          }
-      }
+  @media screen and (max-width: 555px) {
+    flex-basis: 25%;
+  }
 
-      .block-help__img {
-          flex-basis: 50%;
-          .block-help__image {
-              width: 100%;
-          }
-      }
+  @media screen and (max-width: 455px) {
+    flex-basis: 25%;
+  }
+
+  @media screen and (max-width: 371px) {
+    flex-basis: 25%;
+  }
+}
+
+/*Часть с нижней строчкой надписей*/
+
+.footer__second-wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 39px;
+
+  @media screen and (max-width: 589px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-line {
+    color: #A2A2A2;
+    font-family: $font3;
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+
+  .footer__secont-text {
+    display: flex;
+
+    .block__text-one {
+      margin-right: 16px;
+    }
+  }
+}
+
+.footer {
+  .footer__third-text {
+    display: flex;
+
+    .text-line__last-block {
+      margin-right: 8px;
+    }
+
+    .footer__last-icon {
+      height: 17px;
+    }
   }
 }
