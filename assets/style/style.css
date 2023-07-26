@@ -251,35 +251,10 @@ li {
   padding-bottom: 180px;
 }
 
-
-.block-festival__video {
-  min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.block-festival__video-item {
-  width: 960px;
-  padding: 24px 0;
-}
-
-.block-festival__logo-img {
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-.block-festival__logo-img {
-  height: 150px;
-}
-
-.block-festival__logo-img img {
-  max-width: 100%;
-}
-
 .block-festival__why {
   margin-top: 60px;
   display: grid;
-  gap: 80px;
+  gap: 100px;
   grid-template-columns: repeat(3, 312px);
   justify-content: center;
 }
@@ -295,42 +270,18 @@ li {
   padding: 24px 0;
 }
 
-
 .block-festival__why-item-text {
   font-family: "TildaSansRegular", sans-serif;
   font-size: 16px;
   line-height: 140%;
 }
 
-
-.block-festival__why-item-text-p.text-p__small{
-  text-align: left;
-  font-size: 20px;
-  margin-left: 18px;
-}
-
 .block-festival__why-item-img {
-  height: 230px;
+  height: 200px;
 }
 
-.block-festival__why-item-img img {
+.block-festival__why-item-image img {
   max-width: 100%;
-}
-
-.block-festival__buttons {
-  display: flex;
-  flex-basis: 40%;
-  justify-content: space-around;
-  margin: 60px 0 ;
-}
-
-.block-festival__button {
-  display: inline-block;
-  align-self: center;
-}
-
-.block-festival__button-1 {
-  text-decoration: none;
 }
 
 .block-progress {
@@ -777,6 +728,99 @@ li {
 }
 
 /* header end */
+.block-festival {
+  flex-basis: 11.25%;
+}
+.block-festival .block-festival__container {
+  max-width: 71.25rem;
+  margin: 0 auto;
+}
+.block-festival .block-festival__container .block-festival__content {
+  background-position: top center;
+  background-size: initial;
+  padding-bottom: 11.25rem;
+}
+.block-festival .block-festival__container .block-festival__content .block-festival__text {
+  font-family: "TildaSansBold";
+  font-size: 4rem;
+  line-height: 5rem;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.block-festival .block-festival__container .block-festival__content .block-festival__text .block-festival__video {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.block-festival .block-festival__container .block-festival__content .block-festival__text .block-festival__video .block-festival__video-item {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 0;
+  aspect-ratio: 16/9;
+}
+.block-festival .block-festival__container .block-festival__content .block-festival__text .block-festival__text-p {
+  font-family: "TildaSansRegular";
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+.block-festival .block-festival__container .block-festival__content .block-festival__logo-img {
+  margin-right: 0.625rem;
+  margin-bottom: 0.625rem;
+  height: 9.375rem;
+}
+.block-festival .block-festival__container .block-festival__content .block-festival__logo-img .block-festival__logo-img img {
+  max-width: 100%;
+}
+.block-festival .block-festival__container .block-festival__why {
+  margin-top: 2.75rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, 322px);
+  justify-content: center;
+}
+.block-festival .block-festival__container .block-festival__why .block-festival__why-item {
+  margin: 3%;
+  border: 2px solid #e7dcc8;
+  border-radius: 15px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.block-festival .block-festival__container .block-festival__why .block-festival__why-item .block-festival__why-item-img {
+  border-radius: 15px;
+  height: 13.125rem;
+  max-width: 100%;
+}
+.block-festival .block-festival__container .block-festival__why .block-festival__why-item .block-festival__why-item-title {
+  font-family: "TildaSansMedium", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+  padding: 1.5rem 0;
+}
+.block-festival .block-festival__container .block-festival__why .block-festival__why-item .block-festival__why-item-text {
+  font-family: "TildaSansRegular";
+  font-size: 1rem;
+  font-weight: 700;
+}
+.block-festival .block-festival__container .block-festival__why .block-festival__why-item .block-festival__why-item-text .block-festival__why-item-text-p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+.block-festival .block-festival__container .block-festival__buttons {
+  display: flex;
+  justify-content: center;
+  margin: 3.73rem auto;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  text-decoration: none;
+}
+
 /* Блок достижения block-progress*/
 .block-progress {
   background-color: #f9f6f1;
