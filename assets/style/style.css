@@ -258,12 +258,7 @@ li {
 }
 
 .header {
-  flex-basis: 2%;
-}
-@media screen and (max-width: 769px) {
-  .header {
-    flex-basis: 1%;
-  }
+  flex-basis: 1%;
 }
 
 .block-festival {
@@ -520,6 +515,16 @@ li {
   color: #000;
   text-align: center;
 }
+@media screen and (max-width: 1089px) {
+  .header__link {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 919px) {
+  .header__link {
+    padding: 10px;
+  }
+}
 
 .header__link:hover {
   color: #bc2525;
@@ -621,6 +626,7 @@ li {
 .header__btn {
   display: inline-block;
   color: #f1f5fa;
+  width: 9rem;
   /* margin: 0 14px 0 12px; */
 }
 
@@ -1120,7 +1126,7 @@ li {
   list-style: none;
 }
 .footer__nav .footer__menu .footer__item .footer__link {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "TildaSansBold";
   font-weight: 700;
   font-size: 1rem;
@@ -1174,7 +1180,7 @@ li {
   }
 }
 .footer__second-wrapper .text-line {
-  color: #A2A2A2;
+  color: #a2a2a2;
   font-family: "TildaSansRegular";
   font-weight: 400;
   font-size: 0.8rem;
@@ -1230,11 +1236,11 @@ li {
 }
 
 .card-background__white {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .card-background__gold {
-  background-color: #A98B5C;
+  background-color: #a98b5c;
 }
 
 .review__text-block {
