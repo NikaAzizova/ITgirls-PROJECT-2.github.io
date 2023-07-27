@@ -104,12 +104,12 @@ body {
 }
 @media screen and (max-width: 919px) {
   .container {
-    max-width: 719px;
+    max-width: 728px;
   }
 }
 @media screen and (max-width: 828px) {
   .container {
-    max-width: 728px;
+    max-width: 719px;
   }
 }
 @media screen and (max-width: 789px) {
@@ -635,6 +635,7 @@ li {
 .block-festival .block-festival__container .block-festival__content {
   background-position: top center;
   background-size: initial;
+  margin-bottom: 1rem;
 }
 .block-festival .block-festival__container .block-festival__content .block-festival__text {
   font-family: "TildaSansBold";
@@ -703,9 +704,10 @@ li {
 }
 .block-festival .block-festival__container .block-festival__why .block-festival__why-item .block-festival__why-item-text .block-festival__why-item-text-p {
   text-align: left;
-  font-size: 20px;
   font-weight: 400;
   margin-left: 20px;
+  margin-bottom: 1rem; /*вот этим добавила пробел между строчками списка*/
+  list-style-type: none; /*вот этим убрала маркеры*/
 }
 .block-festival .block-festival__container .block-festival__buttons {
   display: flex;
