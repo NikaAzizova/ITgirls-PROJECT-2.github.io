@@ -527,7 +527,8 @@
   display: flex;
   flex-basis: 25%;
   justify-content: center;
-  background: $background;
+  background: linear-gradient($background, 90%, white);
+  margin-bottom: 2%;
 
   @media (max-width: 900px) {
     flex-basis: 13%;
@@ -719,6 +720,7 @@
 .block-help {
   flex-basis: 12%;
   display: flex;
+  margin-bottom: 7%;
 
   @media (max-width: 500px) {
     flex-basis: 7%;
@@ -917,13 +919,15 @@
 
 .block-review {
   flex-direction: column;
+  margin-bottom: 3%; /*добавила*/
 }
 
 .box-review {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 71.9rem;
+  // width: 71.9rem;
+  width: 100%; /*добавила.нужно чтобы этот блок был шириной в контейнер*/
   height: 25rem;
   border-radius: 4.6875rem;
   background: $background;
@@ -1007,8 +1011,10 @@
   display: flex;
   width: 100%;
   padding-top: 6.06rem;
-  padding-bottom: 9.69rem;
-  height: 40.75rem;
+  // padding-bottom: 9.69rem;
+  margin-bottom: 2rem; /*добавила*/
+  // height: 40.75rem;
+  height: 30rem;/*добавила*/
 }
 
 .gallery__box {

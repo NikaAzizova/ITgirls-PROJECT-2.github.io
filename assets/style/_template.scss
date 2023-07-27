@@ -83,17 +83,17 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  height: 360rem;
+  height: 400rem;
   @media (max-width: 1110px) {
-    height: 400rem;
-    /*эту величину поставила для теста своего блока*/
-  }
-  @media (max-width: 1000px) {
     height: 450rem;
     /*эту величину поставила для теста своего блока*/
   }
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     height: 500rem;
+    /*эту величину поставила для теста своего блока*/
+  }
+  @media (max-width: 900px) {
+    height: 550rem;
     /*эту величину поставила для теста своего блока*/
   }
 }

@@ -59,23 +59,23 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  height: 360rem;
+  height: 400rem;
 }
 @media (max-width: 1110px) {
-  body {
-    height: 400rem;
-    /*эту величину поставила для теста своего блока*/
-  }
-}
-@media (max-width: 1000px) {
   body {
     height: 450rem;
     /*эту величину поставила для теста своего блока*/
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   body {
     height: 500rem;
+    /*эту величину поставила для теста своего блока*/
+  }
+}
+@media (max-width: 900px) {
+  body {
+    height: 550rem;
     /*эту величину поставила для теста своего блока*/
   }
 }
@@ -706,8 +706,10 @@ li {
   text-align: left;
   font-weight: 400;
   margin-left: 20px;
-  margin-bottom: 1rem; /*вот этим добавила пробел между строчками списка*/
-  list-style-type: none; /*вот этим убрала маркеры*/
+  margin-bottom: 1rem;
+  /*вот этим добавила пробел между строчками списка*/
+  list-style-type: none;
+  /*вот этим убрала маркеры*/
 }
 .block-festival .block-festival__container .block-festival__buttons {
   display: flex;
@@ -823,7 +825,8 @@ li {
   display: flex;
   flex-basis: 25%;
   justify-content: center;
-  background: #f9f6f1;
+  background: linear-gradient(#f9f6f1, 90%, white);
+  margin-bottom: 2%;
 }
 @media (max-width: 900px) {
   .block-competition {
@@ -1009,6 +1012,7 @@ li {
 .block-help {
   flex-basis: 12%;
   display: flex;
+  margin-bottom: 7%;
 }
 @media (max-width: 500px) {
   .block-help {
@@ -1180,4 +1184,147 @@ li {
 }
 .footer__second-wrapper .footer__secont-text .block__text-one {
   margin-right: 16px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* Стили блока отзывы */
+.block-review {
+  flex-direction: column;
+  margin-bottom: 3%; /*добавила*/
+}
+
+.box-review {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; /*добавила.нужно чтобы этот блок был шириной в контейнер*/
+  height: 25rem;
+  border-radius: 4.6875rem;
+  background: #f9f6f1;
+  box-shadow: 0px 25px 100px 0px rgba(2, 43, 121, 0.1);
+}
+
+.box-review__header-wrapper {
+  display: flex;
+  width: 100%;
+  height: 10.31rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-review__review-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.box-review__review-card {
+  width: 15.6875rem;
+  height: 9.70481rem;
+  flex-shrink: 0;
+  filter: drop-shadow(0px 25px 50px rgba(50, 70, 101, 0.2));
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.card-background__white {
+  background-color: #FFF;
+}
+
+.card-background__gold {
+  background-color: #A98B5C;
+}
+
+.review__text-block {
+  width: 13rem;
+  height: 4.5rem;
+  flex-shrink: 0;
+}
+
+.review__signature-block {
+  width: 13rem;
+  height: 3.95rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  flex-grow: 1;
+}
+
+.review__signature {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signature__name {
+  color: #324665;
+  font-family: Tilda Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem;
+}
+
+.text-p__extra-small {
+  color: #324665;
+  font-family: "TildaSansRegular";
+  font-size: 0.6875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.gallery {
+  display: flex;
+  width: 100%;
+  padding-top: 6.06rem;
+  margin-bottom: 2rem; /*добавила*/
+  height: 30rem; /*добавила*/
+}
+
+.gallery__box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+}
+
+.gallery__box > img {
+  width: 200%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+
+.gallery__box:hover {
+  flex: 1 1 50%;
+}
+
+.gallery__box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+
+.review__buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  -moz-column-gap: 20%;
+       column-gap: 20%;
+  align-items: center;
+  width: 100%;
+}
+
+/* Конец стилей блока Отзывы *//*# sourceMappingURL=style.css.map */
