@@ -255,6 +255,9 @@ li {
 
 .header {
   flex-basis: 1%;
+  // @media screen and (max-width: 789px) {
+  //   flex-basis: 1%;
+  // }
 }
 
 .block-festival {

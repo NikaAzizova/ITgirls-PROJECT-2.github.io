@@ -22,7 +22,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container container">
+      <div class="header__container header__ctr2">
         <!-- logo -->
         <a href="#" class="header__logo"
           ><img
@@ -39,10 +39,10 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
-              <a href="#" class="header__link">Фестиваль</a>
+              <a href="#festival" class="header__link">Фестиваль</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">О нас</a>
+              <a href="#aboutUs" class="header__link">О нас</a>
             </li>
             <li class="header__item">
               <a href="#partners" class="header__link">Партнеры</a>
@@ -51,7 +51,7 @@
               <a href="#contest" class="header__link">Конкурс</a>
             </li>
             <li class="header__item">
-              <a href="#" class="header__link">Отзывы</a>
+              <a href="#reviews" class="header__link">Отзывы</a>
             </li>
             <li class="header__item">
               <a href="#" class="header__link">Контакты</a>
@@ -66,7 +66,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="block-festival">
+      <section class="block-festival" id="festival">
         <div class="block-festival__container container">
           <div class="block-festival__content">
             <div class="block-festival__text">
@@ -214,7 +214,7 @@
 
       <!-- блок достижения block-progress -->
 
-      <section class="block-progress">
+      <section class="block-progress" id="aboutUs">
         <div class="block-progress__container container container-two">
           <div class="block-progress__main-wrapper">
             <!-- часть с основным текстом и фотографией -->
@@ -519,86 +519,111 @@
       </section>
       <!-- Блок Отзывы -->
 
-    <section class="block-review container">
-      <div class="box-review">
-        <div class="box-review__header-wrapper">
-          <div class="box-review__header title-h2">Отзывы о фестивале</div> 
-        </div>
-        <div class="box-review__review-wrapper">
-      
-          <div class="box-review__review-card card-background__white">
-            <div class="review__text-block text-p__small">Lorem ipsum dolor sit amet consectetur. Non at et porta nunc id ullamcorper aliquet.</div>
-              <div class="review__signature-block">
-              <div class="review__image">
-              <img src="./assets/images/Avatars/image-mila.jpg" alt="avatar-Mila" class="avatar">
+      <section class="block-review container" id="reviews">
+        <div class="box-review">
+          <div class="box-review__header-wrapper">
+            <div class="box-review__header title-h2">Отзывы о фестивале</div>
+          </div>
+          <div class="box-review__review-wrapper">
+            <div class="box-review__review-card card-background__white">
+              <div class="review__text-block text-p__small">
+                Lorem ipsum dolor sit amet consectetur. Non at et porta nunc id
+                ullamcorper aliquet.
               </div>
-              <div class="review__signature">
-              <div class="signature__name">Mила А.</div>
-              <div class="signature__role text-p__extra-small">Участник</div>
+              <div class="review__signature-block">
+                <div class="review__image">
+                  <img
+                    src="./assets/images/Avatars/image-mila.jpg"
+                    alt="avatar-Mila"
+                    class="avatar"
+                  />
+                </div>
+                <div class="review__signature">
+                  <div class="signature__name">Mила А.</div>
+                  <div class="signature__role text-p__extra-small">
+                    Участник
+                  </div>
+                </div>
               </div>
             </div>
-          </div> 
-          <div class="box-review__review-card card-background__gold">
-            <div class="review__text-block text-p__small">Lorem ipsum dolor sit amet consectetur. Non at et porta nunc id ullamcorper aliquet.</div>
-              <div class="review__signature-block">
-              <div class="review__image">
-              <img src="./assets/images/Avatars/image-Andrey.jpg" alt="avatar-Andrey" class="avatar">
+            <div class="box-review__review-card card-background__gold">
+              <div class="review__text-block text-p__small">
+                Lorem ipsum dolor sit amet consectetur. Non at et porta nunc id
+                ullamcorper aliquet.
               </div>
-              <div class="review__signature">
-              <div class="signature__name">Андрей К.</div>
-              <div class="signature__role text-p__extra-small">Участник</div>
+              <div class="review__signature-block">
+                <div class="review__image">
+                  <img
+                    src="./assets/images/Avatars/image-Andrey.jpg"
+                    alt="avatar-Andrey"
+                    class="avatar"
+                  />
+                </div>
+                <div class="review__signature">
+                  <div class="signature__name">Андрей К.</div>
+                  <div class="signature__role text-p__extra-small">
+                    Участник
+                  </div>
+                </div>
               </div>
             </div>
-          </div> 
-          <div class="box-review__review-card card-background__white">
-            <div class="review__text-block text-p__small">Lorem ipsum dolor sit amet consectetur. Non at et porta nunc id ullamcorper aliquet.</div>
-              <div class="review__signature-block">
-              <div class="review__image">
-              <img src="./assets/images/Avatars/image-makar.jpg" alt="avatar-Makar" class="avatar">
+            <div class="box-review__review-card card-background__white">
+              <div class="review__text-block text-p__small">
+                Lorem ipsum dolor sit amet consectetur. Non at et porta nunc id
+                ullamcorper aliquet.
               </div>
-              <div class="review__signature">
-              <div class="signature__name">Макар Д.</div>
-              <div class="signature__role text-p__extra-small">Участник</div>
+              <div class="review__signature-block">
+                <div class="review__image">
+                  <img
+                    src="./assets/images/Avatars/image-makar.jpg"
+                    alt="avatar-Makar"
+                    class="avatar"
+                  />
+                </div>
+                <div class="review__signature">
+                  <div class="signature__name">Макар Д.</div>
+                  <div class="signature__role text-p__extra-small">
+                    Участник
+                  </div>
+                </div>
               </div>
             </div>
-          </div> 
-          
+          </div>
         </div>
-      </div>
-      <div class="gallery"> 
-        <div class="gallery__box">
-          <img src="./assets/images/Photogallery/Photo1.jpg" alt="photo1">
+        <div class="gallery">
+          <div class="gallery__box">
+            <img src="./assets/images/Photogallery/Photo1.jpg" alt="photo1" />
+          </div>
+          <div class="gallery__box">
+            <img src="./assets/images/Photogallery/Photo2.jpg" alt="photo2" />
+          </div>
+          <div class="gallery__box">
+            <img src="./assets/images/Photogallery/Photo3.jpg" alt="photo3" />
+          </div>
+          <div class="gallery__box">
+            <img src="./assets/images/Photogallery/Photo4.jpg" alt="photo4" />
+          </div>
+          <div class="gallery__box">
+            <img src="./assets/images/Photogallery/Photo5.jpg" alt="photo5" />
+          </div>
         </div>
-        <div class="gallery__box"> 
-          <img src="./assets/images/Photogallery/Photo2.jpg" alt="photo2">
+        <div class="review__buttons">
+          <div class="button">
+            <a
+              href="https://fond-borby-s-diabetom.timepad.ru/event/2501952/"
+              target="_blank"
+              ><span class="button__text">Регистрация</span></a
+            >
+          </div>
+          <div class="button">
+            <a href="https://vk.com/@diabet.fest-programma" target="_blank"
+              ><span class="button__text">Программа</span></a
+            >
+          </div>
         </div>
-        <div class="gallery__box">  
-          <img src="./assets/images/Photogallery/Photo3.jpg" alt="photo3"> 
-        </div>
-        <div class="gallery__box">
-          <img src="./assets/images/Photogallery/Photo4.jpg" alt="photo4">
-        </div>
-        <div class="gallery__box">
-          <img src="./assets/images/Photogallery/Photo5.jpg" alt="photo5">
-        </div>
-      </div>
-      <div class="review__buttons">
-        <div class="button">
-          <a
-            href="https://fond-borby-s-diabetom.timepad.ru/event/2501952/"
-            target="_blank"
-            ><span class="button__text">Регистрация</span></a
-          >
-        </div>
-        <div class="button">
-          <a href="https://vk.com/@diabet.fest-programma" target="_blank"
-            ><span class="button__text">Программа</span></a
-          >
-        </div>
-      </div>
-             </section>
+      </section>
       <!-- Конец блока отзывы -->
-      
+
       <section class="block-help">
         <div class="block-help__container container">
           <div class="block-help__content">
