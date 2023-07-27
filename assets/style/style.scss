@@ -103,6 +103,7 @@
   top: 0;
   width: 100%;
   z-index: 5;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .header__container {
@@ -110,16 +111,26 @@
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  // padding: 3.5rem 1rem 3.5rem 0;
+  padding: 1rem 0 1rem 0;
 
   @media screen and (max-width: 769px) {
-    // padding: 2rem 1rem 2rem 0;
+    // padding: 2rem 1rem 2rem; //0.625rem - 10px
   }
 }
+
+// .header__ctr2 {
+//   max-width: 1140px;
+//   // min-width: 320px;
+//   // width: 100%;
+//   margin: 0 auto;
+// }
 
 .header__logo {
   align-self: center;
 
+  // @media screen and (min-width: 769px) and (max-width: 1180px) {
+  //   padding-left: 1rem;
+  // }
   @media screen and (max-width: 769px) {
     order: 1;
   }
@@ -137,15 +148,24 @@
   width: 100%;
   height: 100%;
   position: fixed;
+  left: 0;
   background-color: #fff;
   overflow: hidden;
 
   @media screen and (max-width: 769px) {
-    margin-top: 26rem; //4rem
+    margin-top: 23.5rem; //27.5;26;4rem
   }
-
-  @media screen and (max-width: 361px) {
-    margin-top: 40rem; //4rem
+  @media screen and (max-width: 700px) {
+    margin-top: 27.5rem; //39;29;40;4rem
+  }
+  @media screen and (max-width: 534px) {
+    margin-top: 29rem; //39;29;40;4rem
+  }
+  @media screen and (max-width: 492px) {
+    margin-top: 32rem; //39;29;40;4rem
+  }
+  @media screen and (max-width: 400px) {
+    margin-top: 37.5rem;
   }
 }
 
@@ -159,11 +179,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 40%;
+    // padding-left: 40%;
   }
 
   @media screen and (max-width: 361px) {
-    padding-left: 30%;
+    padding-top: 1rem;
+    // padding-left: 30%;
   }
 }
 
@@ -181,7 +202,13 @@
   padding: 30px;
   color: $header;
   text-align: center;
-  // width: 8rem;
+
+  @media screen and (max-width: 1089px) {
+    padding: 15px;
+  }
+  @media screen and (max-width: 919px) {
+    padding: 10px;
+  }
 }
 
 .header__link:hover {
@@ -239,20 +266,20 @@
 /* Hide checkbox */
 
 /* Toggle menu icon */
-.header__side-menu:checked~.header__nav {
+.header__side-menu:checked ~ .header__nav {
   max-height: 100%;
 }
 
-.header__side-menu:checked~.header__hamb .header__hamb-line {
+.header__side-menu:checked ~ .header__hamb .header__hamb-line {
   background: transparent;
 }
 
-.header__side-menu:checked~.header__hamb .header__hamb-line::before {
+.header__side-menu:checked ~ .header__hamb .header__hamb-line::before {
   transform: rotate(-45deg);
   top: 0;
 }
 
-.header__side-menu:checked~.header__hamb .header__hamb-line::after {
+.header__side-menu:checked ~ .header__hamb .header__hamb-line::after {
   transform: rotate(45deg);
   top: 0;
 }
@@ -290,10 +317,12 @@
 .header__btn {
   display: inline-block;
   color: $btn-text;
+  width: 9rem;
   /* margin: 0 14px 0 12px; */
 }
 
 /* header end */
+
 .block-festival {
   flex-basis: 11.25%;
 
@@ -325,7 +354,6 @@
             height: auto;
             padding: 1.5rem 0;
             aspect-ratio: 16 / 9;
-
           }
         }
 
@@ -370,7 +398,7 @@
         }
 
         .block-festival__why-item-title {
-          font-family: 'TildaSansMedium', sans-serif;
+          font-family: "TildaSansMedium", sans-serif;
           font-size: 1.5rem;
           line-height: 1.8125rem;
           padding: 1.5rem 0;
@@ -539,7 +567,7 @@
     flex: 1;
     background: white;
     border-radius: 4.6875rem;
-    box-shadow: 0px 25px 100px 0px rgba(2, 43, 121, 0.10);
+    box-shadow: 0px 25px 100px 0px rgba(2, 43, 121, 0.1);
 
     @media (max-width: 920px) {
       flex-direction: column;
@@ -594,7 +622,6 @@
 
         .block-competition__nomination-title {
           color: $btn;
-
         }
 
         .block-competition__nomination-list {
@@ -605,12 +632,10 @@
             list-style-type: none;
 
             @media (max-width: 900px) {
-
               font-weight: 600;
               line-height: 2rem;
             }
           }
-
         }
 
         ul.block-competition__nomination-list {
@@ -694,7 +719,6 @@
 
           @media (max-width: 920px) {
             display: none;
-
           }
         }
       }
@@ -785,7 +809,6 @@
 
       .block-help__image {
         width: 100%;
-
       }
     }
   }
@@ -797,7 +820,6 @@
 
   .footer-container {
     display: block;
-
   }
 }
 
@@ -834,13 +856,11 @@
       list-style: none;
 
       .footer__link {
-        color: #FFFFFF;
+        color: #ffffff;
         font-family: $font;
         font-weight: 700;
         font-size: 1rem;
-
       }
-
     }
   }
 }
@@ -888,7 +908,7 @@
   }
 
   .text-line {
-    color: #A2A2A2;
+    color: #a2a2a2;
     font-family: $font3;
     font-weight: 400;
     font-size: 0.8rem;
@@ -909,7 +929,7 @@
   width: 15.6875rem;
   height: 9.70481rem;
   flex-shrink: 0;
-  filter: drop-shadow(0px 25px 50px rgba(50, 70, 101, 0.20));
+  filter: drop-shadow(0px 25px 50px rgba(50, 70, 101, 0.2));
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -931,7 +951,7 @@
   height: 25rem;
   border-radius: 4.6875rem;
   background: $background;
-  box-shadow: 0px 25px 100px 0px rgba(2, 43, 121, 0.10);
+  box-shadow: 0px 25px 100px 0px rgba(2, 43, 121, 0.1);
 }
 
 .box-review__header-wrapper {
@@ -949,15 +969,15 @@
 }
 
 .box-review__review-card {
-  @include card-style
+  @include card-style;
 }
 
 .card-background__white {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .card-background__gold {
-  background-color: #A98B5C;
+  background-color: #a98b5c;
 }
 
 .review__text-block {
@@ -1004,7 +1024,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  ;
 }
 
 .gallery {
@@ -1014,30 +1033,30 @@
   // padding-bottom: 9.69rem;
   margin-bottom: 2rem; /*добавила*/
   // height: 40.75rem;
-  height: 30rem;/*добавила*/
+  height: 30rem; /*добавила*/
 }
 
 .gallery__box {
   flex: 1;
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
   margin: 0 2%;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
   line-height: 0;
 }
 
-.gallery__box>img {
+.gallery__box > img {
   width: 200%;
   height: 100%;
   object-fit: cover;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .gallery__box:hover {
   flex: 1 1 50%;
 }
 
-.gallery__box:hover>img {
+.gallery__box:hover > img {
   width: 100%;
   height: 100%;
 }
@@ -1050,6 +1069,5 @@
   align-items: center;
   width: 100%;
 }
-
 
 /* Конец стилей блока Отзывы */

@@ -111,10 +111,11 @@ body {
   margin: 0 auto;
   @media screen and (max-width: 1150px) {
     max-width: 1075px;
-}
+  }
   @media screen and (max-width: 1088px) {
-    max-width: 888px;}
-    
+    max-width: 888px;
+  }
+
   @media screen and (max-width: 919px) {
     max-width: 728px;
   }
@@ -136,7 +137,6 @@ body {
   @media screen and (max-width: 452px) {
     max-width: 332px;
   }
-
 }
 
 .button {
@@ -254,10 +254,10 @@ li {
 }
 
 .header {
-  flex-basis: 2%;
-  @media screen and (max-width: 769px) {
-    flex-basis: 1%;
-  }
+  flex-basis: 1%;
+  // @media screen and (max-width: 789px) {
+  //   flex-basis: 1%;
+  // }
 }
 
 .block-festival {
@@ -498,7 +498,6 @@ li {
 /*.block-help {
   // flex-basis: 20.3%;
   /*может блок в дальнейшем будет меньше, пока ставлю по макету*/
-
 
 .footer {
   flex-basis: 2.77%;
