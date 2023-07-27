@@ -83,8 +83,15 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  height: 312.5rem;
-
+  height: 360rem;
+  @media (max-width: 1110px) {
+    height: 400rem;
+    /*эту величину поставила для теста своего блока*/
+  }
+  @media (max-width: 1000px) {
+    height: 450rem;
+    /*эту величину поставила для теста своего блока*/
+  }
   @media (max-width: 900px) {
     height: 500rem;
     /*эту величину поставила для теста своего блока*/
@@ -102,14 +109,17 @@ body {
   width: 100%;
   display: flex;
   margin: 0 auto;
+  @media screen and (max-width: 1150px) {
+    max-width: 1075px;
+}
   @media screen and (max-width: 1088px) {
-    max-width: 888px;
-  }
+    max-width: 888px;}
+    
   @media screen and (max-width: 919px) {
-    max-width: 719px;
+    max-width: 728px;
   }
   @media screen and (max-width: 828px) {
-    max-width: 728px;
+    max-width: 719px;
   }
   @media screen and (max-width: 789px) {
     max-width: 660px;
@@ -172,12 +182,12 @@ body {
   line-height: 2.25rem; /* 163.636% */
 
   @media (max-width: 900px) {
-    font-size: 1rem;
+    font-size: 1.15rem;
     line-height: 2rem;
   }
 
   @media (max-width: 500px) {
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1rem;
   }
 
@@ -192,7 +202,7 @@ body {
   line-height: 1.375rem; /* 137.5% */
 
   @media (max-width: 900px) {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1rem;
   }
 
@@ -277,7 +287,7 @@ li {
 .block-festival__content {
   background-position: top center;
   background-size: initial;
-  padding-bottom: 180px;
+  // padding-bottom: 180px;
 }
 
 .block-festival__why {

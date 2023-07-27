@@ -304,7 +304,7 @@
     .block-festival__content {
       background-position: top center;
       background-size: initial;
-      padding-bottom: 11.25rem;
+      margin-bottom: 1rem;
 
       .block-festival__text {
         font-family: $font;
@@ -315,7 +315,6 @@
         text-transform: uppercase;
 
         .block-festival__video {
-          min-height: 60vh;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -525,6 +524,9 @@
   flex-basis: 25%;
   justify-content: center;
   background: $background;
+  @media (max-width: 900px) {
+    flex-basis: 13%;
+  }
 
   .block-competition__container {
     display: flex;
@@ -533,7 +535,7 @@
     border-radius: 4.6875rem;
     box-shadow: 0px 25px 100px 0px rgba(2, 43, 121, 0.10);
 
-    @media (max-width: 900px) {
+    @media (max-width: 920px) {
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
@@ -546,8 +548,12 @@
       flex-basis: 75%;
       gap: 5%;
       padding-left: 6.19rem;
-      padding-top: 3.87rem;
+      padding-top: 2rem;
+      margin-bottom: 1rem;
 
+      @media (max-width: 1110px) {
+        gap: 2%;
+      }
       @media (max-width: 900px) {
         flex-basis: 60%;
         max-width: 80%;
@@ -592,22 +598,18 @@
             list-style-type: none;
 
             @media (max-width: 900px) {
+              
               font-weight: 600;
               line-height: 2rem;
             }
-
-            @media (max-width: 500) {
-              font-weight: 0.6rem;
-              line-height: 1rem;
-            }
-
-            @media (max-width: 400) {
-              font-weight: 0.5rem;
-              line-height: 1rem;
-            }
           }
+          
         }
-
+        ul.block-competition__nomination-list {
+          @media (max-width: 900px) {
+            display: flex;
+          justify-content: space-around; }
+          }
       }
 
       .block-competition__text-2 {
@@ -638,8 +640,23 @@
         background-position: 60% 50%;
         background-repeat: no-repeat;
 
-        @media (max-width: 900px) {
-          background-size: 19rem auto;
+        @media (max-width: 1300px) {
+          margin-right: 0%;
+          background-size: 100%;
+        }
+        @media (max-width: 920px) {
+          margin-right: 0%;
+          background-image: url(../images/competition-girlgroup.png);
+          background-size: 100% auto;
+        }
+        @media (max-width: 916px) {
+          background-size: 80% auto;
+        }
+        @media (max-width: 760px) {
+          background-size: 70% auto;
+        }
+        @media (max-width: 652px) {
+          background-image: none;
         }
 
         .block-competition__img-inner {
@@ -651,9 +668,8 @@
           background-position: 70% 60%;
           background-repeat: no-repeat;
 
-          @media (max-width: 900px) {
-            background-size: 17rem auto;
-            background-position: 40% 60%;
+          @media (max-width: 920px) {
+            background-image: none;
           }
         }
 
@@ -662,9 +678,12 @@
           height: 4.95231rem;
           transform: rotate(-15.203deg);
           flex-shrink: 0;
+          @media (max-width: 920px) {
+            display: none;
+          
+          }
         }
       }
-
       .block-competition__buttons {
         display: flex;
         flex-basis: 40%;
@@ -676,7 +695,6 @@
 
           .block-competition__button-1 {
             text-decoration: none;
-
           }
         }
       }
@@ -687,33 +705,44 @@
 .block-help {
   flex-basis: 12%;
   display: flex;
+  @media (max-width: 500px) {
+    flex-basis: 7%;
+  }
 
   .block-help__container {
-    display: flex;
-    flex: 1;
     gap: 5%;
 
     @media (max-width: 900px) {
       flex-direction: column;
-
     }
 
     .block-help__content {
       flex-basis: 50%;
       display: flex;
       flex-direction: column;
+      justify-content: space-around;
+      @media (max-width: 500px) {
+        flex-basis: 100%;
+          align-items: center;
+      }
 
       .block-help__text {
         flex-basis: 60%;
         display: flex;
         flex-direction: column;
         gap: 10%;
+        @media (max-width: 500px) {
+          align-items: center;
+        }
       }
 
       .block-help__buttoms {
         flex-basis: 40%;
         display: flex;
         justify-content: space-between;
+        @media (max-width: 500px) {
+          width: 70%;
+        }
 
         .block-help__button {
           display: inline-block;
@@ -727,10 +756,15 @@
     }
 
     .block-help__img {
+      display: flex;
       flex-basis: 50%;
+      @media (max-width: 500px) {
+        display: none;
+      }
 
       .block-help__image {
         width: 100%;
+
       }
     }
   }
