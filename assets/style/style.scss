@@ -383,9 +383,11 @@
 
           .block-festival__why-item-text-p {
             text-align: left;
-            font-size: 20px;
+            // font-size: 20px;
             font-weight: 400;
             margin-left: 20px;
+            margin-bottom: 1rem; /*вот этим добавила пробел между строчками списка*/
+            list-style-type: none; /*вот этим убрала маркеры*/
           }
         }
       }
