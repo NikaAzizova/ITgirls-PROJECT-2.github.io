@@ -127,7 +127,7 @@
 .header__logo {
   align-self: center;
 
-  @media screen and (max-width: 1180px) {
+  @media screen and (min-width: 769px) and (max-width: 1180px) {
     padding-left: 1rem;
   }
   @media screen and (max-width: 769px) {
@@ -153,12 +153,17 @@
   @media screen and (max-width: 769px) {
     margin-top: 23.5rem; //27.5;26;4rem
   }
-
-  @media screen and (max-width: 361px) {
-    margin-top: 28rem; //39;29;40;4rem
+  @media screen and (max-width: 700px) {
+    margin-top: 27.5rem; //39;29;40;4rem
   }
-  @media screen and (max-width: 361px) {
-    margin-top: 29rem;
+  @media screen and (max-width: 534px) {
+    margin-top: 29rem; //39;29;40;4rem
+  }
+  @media screen and (max-width: 492px) {
+    margin-top: 32rem; //39;29;40;4rem
+  }
+  @media screen and (max-width: 400px) {
+    margin-top: 37.5rem;
   }
 }
 
