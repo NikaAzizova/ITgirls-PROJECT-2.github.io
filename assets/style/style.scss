@@ -386,8 +386,10 @@
             // font-size: 20px;
             font-weight: 400;
             margin-left: 20px;
-            margin-bottom: 1rem; /*вот этим добавила пробел между строчками списка*/
-            list-style-type: none; /*вот этим убрала маркеры*/
+            margin-bottom: 1rem;
+            /*вот этим добавила пробел между строчками списка*/
+            list-style-type: none;
+            /*вот этим убрала маркеры*/
           }
         }
       }
@@ -526,6 +528,7 @@
   flex-basis: 25%;
   justify-content: center;
   background: $background;
+
   @media (max-width: 900px) {
     flex-basis: 13%;
   }
@@ -556,6 +559,7 @@
       @media (max-width: 1110px) {
         gap: 2%;
       }
+
       @media (max-width: 900px) {
         flex-basis: 60%;
         max-width: 80%;
@@ -600,18 +604,20 @@
             list-style-type: none;
 
             @media (max-width: 900px) {
-              
+
               font-weight: 600;
               line-height: 2rem;
             }
           }
-          
+
         }
+
         ul.block-competition__nomination-list {
           @media (max-width: 900px) {
             display: flex;
-          justify-content: space-around; }
+            justify-content: space-around;
           }
+        }
       }
 
       .block-competition__text-2 {
@@ -646,17 +652,21 @@
           margin-right: 0%;
           background-size: 100%;
         }
+
         @media (max-width: 920px) {
           margin-right: 0%;
           background-image: url(../images/competition-girlgroup.png);
           background-size: 100% auto;
         }
+
         @media (max-width: 916px) {
           background-size: 80% auto;
         }
+
         @media (max-width: 760px) {
           background-size: 70% auto;
         }
+
         @media (max-width: 652px) {
           background-image: none;
         }
@@ -680,12 +690,14 @@
           height: 4.95231rem;
           transform: rotate(-15.203deg);
           flex-shrink: 0;
+
           @media (max-width: 920px) {
             display: none;
-          
+
           }
         }
       }
+
       .block-competition__buttons {
         display: flex;
         flex-basis: 40%;
@@ -707,6 +719,7 @@
 .block-help {
   flex-basis: 12%;
   display: flex;
+
   @media (max-width: 500px) {
     flex-basis: 7%;
   }
@@ -723,9 +736,10 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+
       @media (max-width: 500px) {
         flex-basis: 100%;
-          align-items: center;
+        align-items: center;
       }
 
       .block-help__text {
@@ -733,6 +747,7 @@
         display: flex;
         flex-direction: column;
         gap: 10%;
+
         @media (max-width: 500px) {
           align-items: center;
         }
@@ -742,6 +757,7 @@
         flex-basis: 40%;
         display: flex;
         justify-content: space-between;
+
         @media (max-width: 500px) {
           width: 70%;
         }
@@ -760,6 +776,7 @@
     .block-help__img {
       display: flex;
       flex-basis: 50%;
+
       @media (max-width: 500px) {
         display: none;
       }
@@ -884,3 +901,149 @@
   }
 }
 
+/* Стили блока отзывы */
+
+@mixin card-style {
+  width: 15.6875rem;
+  height: 9.70481rem;
+  flex-shrink: 0;
+  filter: drop-shadow(0px 25px 50px rgba(50, 70, 101, 0.20));
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.block-review {
+  flex-direction: column;
+}
+
+.box-review {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 71.9rem;
+  height: 25rem;
+  border-radius: 4.6875rem;
+  background: $background;
+  box-shadow: 0px 25px 100px 0px rgba(2, 43, 121, 0.10);
+}
+
+.box-review__header-wrapper {
+  display: flex;
+  width: 100%;
+  height: 10.31rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-review__review-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.box-review__review-card {
+  @include card-style
+}
+
+.card-background__white {
+  background-color: #FFF;
+}
+
+.card-background__gold {
+  background-color: #A98B5C;
+}
+
+.review__text-block {
+  width: 13rem;
+  height: 4.5rem;
+  flex-shrink: 0;
+}
+
+.review__signature-block {
+  width: 13rem;
+  height: 3.95rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  flex-grow: 1;
+}
+
+.review__signature {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signature__name {
+  color: #324665;
+  font-family: Tilda Sans;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem;
+}
+
+.text-p__extra-small {
+  color: $text;
+  font-family: $font3;
+  font-size: 0.6875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  ;
+}
+
+.gallery {
+  display: flex;
+  width: 100%;
+  padding-top: 6.06rem;
+  padding-bottom: 9.69rem;
+  height: 40.75rem;
+}
+
+.gallery__box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+  line-height: 0;
+}
+
+.gallery__box>img {
+  width: 200%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s;
+}
+
+.gallery__box:hover {
+  flex: 1 1 50%;
+}
+
+.gallery__box:hover>img {
+  width: 100%;
+  height: 100%;
+}
+
+.review__buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  column-gap: 20%;
+  align-items: center;
+  width: 100%;
+}
+
+
+/* Конец стилей блока Отзывы */
