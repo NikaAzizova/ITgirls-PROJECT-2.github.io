@@ -587,6 +587,7 @@
 .block-competition {
   display: flex;
   // flex-basis: 25%;
+  max-height: fit-content;
   justify-content: center;
   background: linear-gradient($background, 90%, white);
   padding-top: 5%;

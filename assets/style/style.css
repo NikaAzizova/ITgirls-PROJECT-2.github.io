@@ -60,7 +60,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  height: 500rem;
+  max-height: 500rem;
 }
 @media (max-width: 1110px) {
   body {
@@ -793,6 +793,8 @@ li {
 /* block-competition start */
 .block-competition {
   display: flex;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   justify-content: center;
   background: linear-gradient(#f9f6f1, 90%, white);
   padding-top: 5%;
