@@ -85,13 +85,13 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  max-height: 450rem;
+  max-height: 550rem;
   @media (max-width: 1110px) {
     // max-height: 450rem;
     /*эту величину поставила для теста своего блока*/
   }
   @media (max-width: 950px) {
-    max-height: 500rem;
+    // max-height: 500rem;
     /*эту величину поставила для теста своего блока*/
   }
   @media (max-width: 900px) {

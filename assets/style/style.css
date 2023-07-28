@@ -60,7 +60,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  max-height: 450rem;
+  max-height: 550rem;
 }
 @media (max-width: 1110px) {
   body {
@@ -69,7 +69,6 @@ body {
 }
 @media (max-width: 950px) {
   body {
-    max-height: 500rem;
     /*эту величину поставила для теста своего блока*/
   }
 }
