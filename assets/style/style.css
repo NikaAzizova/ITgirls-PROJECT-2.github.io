@@ -268,7 +268,6 @@ li {
 
 /* header start */
 .header {
-  flex-basis: 1%;
   background-color: #ffffff;
   position: sticky;
   top: 0;
@@ -307,32 +306,28 @@ li {
   height: 100%;
   position: fixed;
   left: 0;
+  bottom: 0;
   background-color: #fff;
   overflow: hidden;
 }
 @media screen and (max-width: 769px) {
   .header__nav {
-    margin-top: 23.5rem;
+    top: 80.55px;
   }
 }
 @media screen and (max-width: 700px) {
   .header__nav {
-    margin-top: 27.5rem;
+    top: 73.6px;
   }
 }
-@media screen and (max-width: 534px) {
+@media screen and (max-width: 500px) {
   .header__nav {
-    margin-top: 29rem;
-  }
-}
-@media screen and (max-width: 492px) {
-  .header__nav {
-    margin-top: 32rem;
+    top: 70.4px;
   }
 }
 @media screen and (max-width: 400px) {
   .header__nav {
-    margin-top: 37.5rem;
+    top: 67.2px;
   }
 }
 
