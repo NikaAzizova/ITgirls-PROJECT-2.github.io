@@ -370,14 +370,17 @@
         padding-top: 10%;
 
         @media screen and (max-width: 694px) {
+          max-width: 100%;
+          width: 100%;
           padding-top: 0;
+          
         }
       }
     }
   }
 }
 
-/* The part with the main text block-progress*/
+/*the part with the main text of block-progress*/
 .block-progress__wrapper {
   max-width: 50%;
   width: 100%;
@@ -409,7 +412,7 @@
   }
 }
 
-/*the part with the cards of block-progress*/
+/*The part with the cards of block-progress*/
 .cards {
   max-width: 100%;
   width: 100%;
@@ -440,30 +443,49 @@
   .card {
     max-width: 220px;
     width: 100%;
+    border: 3px solid $border-line;
+    border-radius: 15px;
+    @media screen and (max-width: 901px) {
+      margin-bottom: 30px;
+      
+    }
+    @media screen and (max-width: 553px) {
+    max-width: 400px;
+      
+    }
+    
 
     .card__wrapper {
-      margin: 5%;
-      border: 3px solid #e7dcc8;
+      
+      max-width: 100%;
+      background-color: $background-2;
       border-radius: 15px;
-      background-color: #ffffff;
+     
 
       .card__img {
-        padding: 20% 2% 20% 2%;
+        padding: 30% 10% 30% 10%;
+        
       }
 
       .card__img-size {
         max-width: 100%;
         width: 100%;
         min-height: 200px;
+        border-radius: 15px;
       }
+      .card__img-one{
+        background-color: $background;
+        border-radius: 15px;
 
+      }
+      
       .title-h3 {
         margin-bottom: 1rem;
       }
 
       .card__text {
-        margin-bottom: 1rem;
         padding: 5% 5% 0 5%;
+        line-height: 20px;
       }
 
       .text-p__block {
@@ -471,7 +493,7 @@
       }
 
       .card__link {
-        margin-bottom: 1rem;
+        padding-bottom: 10px;
         display: block;
         text-align: center;
         text-decoration: none;
@@ -480,6 +502,47 @@
     }
   }
 }
+
+.block-progress__wrapper-two{
+  @media screen and (max-width: 694px) {
+    margin-bottom: 30px;
+  }
+}
+.card__text-p-one{
+  margin-bottom: 56px;
+}
+.card__text-p-two{
+margin-bottom: 36px;
+@media screen and (max-width: 701px) {
+  margin-bottom: 82px;
+  
+}
+}
+.card__text-p-three{
+  @media screen and (max-width: 901px) {
+    margin-bottom: 50px;
+    
+  }
+  @media screen and (max-width: 753px) {
+    margin-bottom: 74px;
+    
+  }
+}
+.card__text-p-four{
+  margin-bottom: 56px;
+  @media screen and (max-width: 901px) {
+    margin-bottom: 80px;
+    
+  }
+  @media screen and (max-width: 701px) {
+    margin-bottom: 102px;
+    
+  }
+}
+.card__text-p-five{
+  margin-bottom: 70px;
+}
+
 
 /* block-progress end */
 
@@ -1052,6 +1115,10 @@
   display: flex;
   justify-content: space-between;
   padding-top: 39px;
+  @media screen and (max-width: 694px) {
+    min-height: 80px;
+    padding-top: 30px;
+  }
 
   /* Часть с лого */
   .footer__logo {
@@ -1128,6 +1195,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 15px;
   }
 
   .text-line {
