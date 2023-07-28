@@ -794,7 +794,6 @@ li {
 /* block-competition start */
 .block-competition {
   display: flex;
-  flex-basis: 25%;
   justify-content: center;
   background: linear-gradient(#f9f6f1, 90%, white);
   padding-top: 5%;
