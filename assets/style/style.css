@@ -83,7 +83,12 @@ body {
   display: flex;
   flex-basis: 94.05%;
   flex-direction: column;
-  margin-top: 15%;
+  margin-top: 12%;
+}
+@media screen and (max-width: 769px) {
+  .main {
+    margin-top: 15%;
+  }
 }
 @media screen and (max-width: 392px) {
   .main {
