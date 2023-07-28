@@ -793,6 +793,7 @@ li {
 /* block-competition start */
 .block-competition {
   display: flex;
+  flex-basis: 25%;
   max-height: -moz-fit-content;
   max-height: fit-content;
   justify-content: center;
@@ -802,7 +803,6 @@ li {
 }
 @media (max-width: 900px) {
   .block-competition {
-    height: 60rem; /*test*/
     padding-top: 7%;
     margin-bottom: 7%;
   }

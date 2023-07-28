@@ -586,7 +586,7 @@
 /* block-competition start */
 .block-competition {
   display: flex;
-  // flex-basis: 25%;
+  flex-basis: 25%;
   max-height: fit-content;
   justify-content: center;
   background: linear-gradient($background, 90%, white);
@@ -594,8 +594,6 @@
   margin-bottom: 5%;
 
   @media (max-width: 900px) {
-    // flex-basis: 15%;
-    height: 60rem; /*test*/
     padding-top: 7%;
     margin-bottom: 7%;
   }
