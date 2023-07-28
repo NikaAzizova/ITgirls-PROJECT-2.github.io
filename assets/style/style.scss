@@ -126,6 +126,12 @@
   @media screen and (max-width: 919px) {
     padding: 10px;
   }
+  @media screen and (max-width: 769px) {
+    padding: 18px;
+  }
+  // @media screen and (max-width: 400px) {
+  //   font-size: 1rem;
+  // }
 }
 
 .header__link:hover {
