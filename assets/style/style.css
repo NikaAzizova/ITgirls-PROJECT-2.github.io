@@ -374,6 +374,11 @@ li {
     padding: 10px;
   }
 }
+@media screen and (max-width: 769px) {
+  .header__link {
+    padding: 18px;
+  }
+}
 
 .header__link:hover {
   color: #bc2525;
