@@ -85,7 +85,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  max-height: 550rem;
+  height: 500rem;
   @media (max-width: 1110px) {
     // max-height: 450rem;
     /*эту величину поставила для теста своего блока*/
