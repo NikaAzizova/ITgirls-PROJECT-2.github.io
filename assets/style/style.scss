@@ -1068,7 +1068,7 @@
       list-style: none;
 
       .footer__link {
-        color: #ffffff;
+        color: $footer-color1;
         font-family: $font;
         font-weight: 700;
         font-size: 1rem;
@@ -1120,7 +1120,7 @@
   }
 
   .text-line {
-    color: #a2a2a2;
+    color: $footer-color2;
     font-family: $font3;
     font-weight: 400;
     font-size: 0.8rem;
