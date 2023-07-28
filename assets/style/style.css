@@ -681,20 +681,40 @@ li {
 .container-two .block-progress__main-wrapper {
   display: flex;
 }
+@media screen and (max-width: 694px) {
+  .container-two .block-progress__main-wrapper {
+    flex-direction: column;
+  }
+}
 .container-two .block-progress__main-wrapper .block-progress__wrapper-two .block-progress__img {
   max-width: 100%;
   width: 100%;
   padding-top: 10%;
 }
+@media screen and (max-width: 694px) {
+  .container-two .block-progress__main-wrapper .block-progress__wrapper-two .block-progress__img {
+    padding-top: 0;
+  }
+}
 
-/*Часть с основным текстом block-progress*/
+/* The part with the main text block-progress*/
 .block-progress__wrapper {
   max-width: 50%;
   width: 100%;
   padding-top: 7%;
 }
+@media screen and (max-width: 694px) {
+  .block-progress__wrapper {
+    max-width: 100%;
+  }
+}
 .block-progress__wrapper .block-progress__title {
   margin-bottom: 1.38rem;
+}
+@media screen and (max-width: 694px) {
+  .block-progress__wrapper .block-progress__title {
+    text-align: center;
+  }
 }
 .block-progress__wrapper .block-progress__text {
   max-width: 100%;
@@ -709,7 +729,7 @@ li {
   margin-bottom: 3rem;
 }
 
-/*Часть с карточками проектов блока block-progress*/
+/*the part with the cards of block-progress*/
 .cards {
   max-width: 100%;
   width: 100%;
@@ -965,14 +985,16 @@ li {
 .block-review {
   flex-basis: 24.86%;
   flex-direction: column;
-  margin-bottom: 3%; /*добавила*/
+  margin-bottom: 3%;
+  /*добавила*/
 }
 
 .box-review {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%; /*добавила.нужно чтобы этот блок был шириной в контейнер*/
+  width: 100%;
+  /*добавила.нужно чтобы этот блок был шириной в контейнер*/
   height: 25rem;
   border-radius: 4.6875rem;
   background: #f9f6f1;
@@ -1081,8 +1103,10 @@ li {
   display: flex;
   width: 100%;
   padding-top: 6.06rem;
-  margin-bottom: 2rem; /*добавила*/
-  height: 30rem; /*добавила*/
+  margin-bottom: 2rem;
+  /*добавила*/
+  height: 30rem;
+  /*добавила*/
 }
 
 .gallery__box {
