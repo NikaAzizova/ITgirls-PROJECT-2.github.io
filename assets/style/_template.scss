@@ -90,8 +90,8 @@ body {
     // max-height: 450rem;
     /*эту величину поставила для теста своего блока*/
   }
-  @media (max-width: 1000px) {
-    // height: 500rem;
+  @media (max-width: 950px) {
+    max-height: 500rem;
     /*эту величину поставила для теста своего блока*/
   }
   @media (max-width: 900px) {
