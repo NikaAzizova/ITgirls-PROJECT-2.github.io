@@ -977,7 +977,7 @@ li {
 }
 @media (max-width: 920px) {
   .block-competition .block-competition__container .block-competition__img-block .block-competition__buttons {
-    width: 40rem;
+    width: 30rem;
     margin-bottom: 3%;
   }
 }
