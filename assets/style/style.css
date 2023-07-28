@@ -801,7 +801,6 @@ li {
 }
 @media (max-width: 900px) {
   .block-competition {
-    flex-basis: 15%;
     padding-top: 7%;
     margin-bottom: 7%;
   }
