@@ -802,6 +802,7 @@ li {
 }
 @media (max-width: 900px) {
   .block-competition {
+    height: 60rem; /*test*/
     padding-top: 7%;
     margin-bottom: 7%;
   }
