@@ -628,10 +628,10 @@ li {
   text-align: center;
 }
 .cards .card__text {
-  font-family: "TildaSansRegular";
-  color: #324665;
+  /*font-family: $font3;
+  color: $text;
   font-weight: 400;
-  font-size: 1.0625rem;
+  font-size: 1.0625rem; то, что нужно убрать*/
 }
 
 .block-projects__wrapper .card {
@@ -654,6 +654,12 @@ li {
   max-width: 100%;
   background-color: #ffffff;
   border-radius: 15px;
+  /*внутри то, что я добавила, чтобы фон был до конца карточки*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  /*конец добавленного*/
 }
 .block-projects__wrapper .card .card__wrapper .card__img {
   padding: 30% 10% 30% 10%;
@@ -682,6 +688,7 @@ li {
   padding-bottom: 10px;
   display: block;
   text-align: center;
+  justify-self: flex-end;
   text-decoration: none;
   color: #bc2525;
 }
@@ -1249,13 +1256,9 @@ li {
 }
 .block-help .block-help__container .block-help__content .block-help__buttoms {
   flex-basis: 40%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-}
-@media (max-width: 500px) {
-  .block-help .block-help__container .block-help__content .block-help__buttoms {
-    width: 70%;
-  }
 }
 .block-help .block-help__container .block-help__content .block-help__buttoms .block-help__button {
   display: inline-block;

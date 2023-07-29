@@ -442,10 +442,10 @@
   }
 
   .card__text {
-    font-family: $font3;
+    /*font-family: $font3;
     color: $text;
     font-weight: 400;
-    font-size: 1.0625rem;
+    font-size: 1.0625rem; то, что нужно убрать*/
   }
 }
 
@@ -466,6 +466,12 @@
       max-width: 100%;
       background-color: $background-2;
       border-radius: 15px;
+      /*внутри то, что я добавила, чтобы фон был до конца карточки*/
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      /*конец добавленного*/
 
       .card__img {
         padding: 30% 10% 30% 10%;
@@ -499,6 +505,7 @@
         padding-bottom: 10px;
         display: block;
         text-align: center;
+        justify-self: flex-end;
         text-decoration: none;
         color: $btn;
       }
@@ -1062,17 +1069,14 @@
 
       .block-help__buttoms {
         flex-basis: 40%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-
-        @media (max-width: 500px) {
-          width: 70%;
-        }
 
         .block-help__button {
           display: inline-block;
           align-self: center;
-
+      
           .block-help__button-1 {
             text-decoration: none;
           }
