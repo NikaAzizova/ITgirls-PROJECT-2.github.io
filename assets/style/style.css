@@ -83,6 +83,7 @@ body {
   display: flex;
   flex-basis: 94.05%;
   flex-direction: column;
+  margin-top: 15%; /*это для того, чтобы хэдер не был поверх контента*/
 } /*просто блок перенесла выше*/
 .container {
   max-width: 1140px;
@@ -269,7 +270,7 @@ li {
 /* header start */
 .header {
   background-color: #ffffff;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 5;
