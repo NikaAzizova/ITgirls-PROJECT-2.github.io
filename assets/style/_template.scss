@@ -58,7 +58,6 @@ $font: "TildaSansBold";
 $font2: "TildaSansExtraBold";
 $font3: "TildaSansRegular";
 
-
 * {
   margin: 0;
   padding: 0;
@@ -106,6 +105,13 @@ body {
   display: flex;
   flex-basis: 94.05%;
   flex-direction: column;
+  margin-top: 12%;
+  @media screen and (max-width: 769px) {
+    margin-top: 15%;
+  }
+  @media screen and (max-width: 392px) {
+    margin-top: 19%;
+  }
 } /*просто блок перенесла выше*/
 
 .container {

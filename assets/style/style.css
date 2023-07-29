@@ -83,8 +83,20 @@ body {
   display: flex;
   flex-basis: 94.05%;
   flex-direction: column;
-  margin-top: 15%; /*это для того, чтобы хэдер не был поверх контента*/
-} /*просто блок перенесла выше*/
+  margin-top: 12%;
+}
+@media screen and (max-width: 769px) {
+  .main {
+    margin-top: 15%;
+  }
+}
+@media screen and (max-width: 392px) {
+  .main {
+    margin-top: 19%;
+  }
+}
+
+/*просто блок перенесла выше*/
 .container {
   max-width: 1140px;
   min-width: 320px;
