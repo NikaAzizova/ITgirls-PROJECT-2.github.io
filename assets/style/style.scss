@@ -677,8 +677,8 @@
       flex-basis: 75%;
       gap: 5%;
       padding-left: 6.19rem;
-      padding-top: 2rem;
-      margin-bottom: 1rem;
+      padding-top: 3%;
+      margin-bottom: 3%;
 
       @media (max-width: 1110px) {
         gap: 2%;
@@ -688,7 +688,6 @@
         flex-basis: 60%;
         max-width: 80%;
         padding-left: 0;
-        padding-top: 0;
       }
 
       .block-competition__text {
@@ -720,16 +719,15 @@
         }
 
         .block-competition__nomination-list {
-          .block-competition__nomination-item {
-            font-weight: 700;
-            line-height: 1.5rem;
-            color: $header;
-            list-style-type: none;
+          font-weight: 700;
+          line-height: 1.5rem;
+          color: $header;
+          list-style-type: none;
 
-            @media (max-width: 900px) {
-              font-weight: 600;
-              line-height: 2rem;
-            }
+          @media (max-width: 900px) {
+            font-size: 0.8rem;
+            font-weight: 600;
+            line-height: 2rem;
           }
         }
 
@@ -826,6 +824,11 @@
         @media (max-width: 920px) {
           width: 30rem;
           margin-bottom: 3%;
+        }
+        @media (max-width: 500px) {
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
         }
 
         .block-competition__button {
