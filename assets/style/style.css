@@ -62,22 +62,6 @@ body {
   flex-direction: column;
   max-height: 500rem;
 }
-@media (max-width: 1110px) {
-  body {
-    /*эту величину поставила для теста своего блока*/
-  }
-}
-@media (max-width: 950px) {
-  body {
-    /*эту величину поставила для теста своего блока*/
-  }
-}
-@media (max-width: 900px) {
-  body {
-    /*эту величину поставила для теста своего блока*/
-  }
-}
-
 .main {
   display: flex;
   flex-basis: 94.05%;
@@ -95,7 +79,6 @@ body {
   }
 }
 
-/*просто блок перенесла выше*/
 .container {
   max-width: 1140px;
   min-width: 320px;
@@ -182,7 +165,6 @@ body {
   font-family: "TildaSansBold";
   font-size: 2.5rem;
   line-height: 4rem;
-  /*шрифт по брейкпойнтам добавила*/
 }
 @media (max-width: 900px) {
   .title-h2 {
@@ -201,8 +183,7 @@ body {
   color: #324665;
   font-family: "TildaSansRegular";
   font-size: 1.375rem;
-  line-height: 2.25rem; /* 163.636% */
-  /*шрифт по брейкпойнтам добавила*/
+  line-height: 2.25rem;
 }
 
 .text-p__small {
@@ -210,7 +191,7 @@ body {
   font-family: "TildaSansRegular";
   font-size: 1.2rem;
   font-weight: 500;
-  line-height: 1.375rem; /* 137.5% */
+  line-height: 1.375rem;
 }
 
 a,
@@ -447,7 +428,6 @@ li {
   display: inline-block;
   color: #f1f5fa;
   width: 9rem;
-  /* margin: 0 14px 0 12px; */
 }
 
 /* header end */
@@ -627,12 +607,6 @@ li {
   color: #000;
   text-align: center;
 }
-.cards .card__text {
-  /*font-family: $font3;
-  color: $text;
-  font-weight: 400;
-  font-size: 1.0625rem; то, что нужно убрать*/
-}
 
 .block-projects__wrapper .card {
   max-width: 220px;
@@ -654,12 +628,10 @@ li {
   max-width: 100%;
   background-color: #ffffff;
   border-radius: 15px;
-  /*внутри то, что я добавила, чтобы фон был до конца карточки*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  /*конец добавленного*/
 }
 .block-projects__wrapper .card .card__wrapper .card__img {
   padding: 30% 10% 30% 10%;
@@ -1043,7 +1015,6 @@ li {
   flex-basis: 24.86%;
   flex-direction: column;
   margin-bottom: 5%;
-  /*добавила*/
 }
 @media (max-width: 920px) {
   .block-review {
@@ -1056,7 +1027,6 @@ li {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  /*добавила.нужно чтобы этот блок был шириной в контейнер*/
   height: 25rem;
   border-radius: 4.6875rem;
   background: #f9f6f1;
@@ -1166,9 +1136,7 @@ li {
   width: 100%;
   padding-top: 6.06rem;
   margin-bottom: 2rem;
-  /*добавила*/
   height: 30rem;
-  /*добавила*/
 }
 
 .gallery__box {

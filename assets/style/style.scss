@@ -18,24 +18,12 @@
   align-items: center;
   padding: 1rem 0 1rem 0;
 
-  @media screen and (max-width: 769px) {
-    // padding: 2rem 1rem 2rem; //0.625rem - 10px
-  }
+  @media screen and (max-width: 769px) {}
 }
-
-// .header__ctr2 {
-//   max-width: 1140px;
-//   // min-width: 320px;
-//   // width: 100%;
-//   margin: 0 auto;
-// }
 
 .header__logo {
   align-self: center;
 
-  // @media screen and (min-width: 769px) and (max-width: 1180px) {
-  //   padding-left: 1rem;
-  // }
   @media screen and (max-width: 769px) {
     order: 1;
   }
@@ -59,28 +47,22 @@
   overflow: hidden;
 
   @media screen and (max-width: 769px) {
-    // margin-top: 23.5rem; //27.5;26;4rem
     top: 80.55px;
   }
 
   @media screen and (max-width: 700px) {
-    // margin-top: 27.5rem; //39;29;40;4rem
     top: 73.6px;
   }
 
-  @media screen and (max-width: 534px) {
-    // margin-top: 29rem; //39;29;40;4rem
-  }
+  @media screen and (max-width: 534px) {}
+
   @media screen and (max-width: 500px) {
     top: 70.4px;
   }
 
-  @media screen and (max-width: 492px) {
-    // margin-top: 32rem; //39;29;40;4rem
-  }
+  @media screen and (max-width: 492px) {}
 
   @media screen and (max-width: 400px) {
-    // margin-top: 37.5rem;
     top: 67.2px;
   }
 }
@@ -89,18 +71,15 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  // width: 40%;
 
   @media screen and (max-width: 769px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // padding-left: 40%;
   }
 
   @media screen and (max-width: 361px) {
     padding-top: 1rem;
-    // padding-left: 30%;
   }
 }
 
@@ -126,12 +105,10 @@
   @media screen and (max-width: 919px) {
     padding: 10px;
   }
+
   @media screen and (max-width: 769px) {
     padding: 18px;
   }
-  // @media screen and (max-width: 400px) {
-  //   font-size: 1rem;
-  // }
 }
 
 .header__link:hover {
@@ -189,20 +166,20 @@
 /* Hide checkbox */
 
 /* Toggle menu icon */
-.header__side-menu:checked ~ .header__nav {
+.header__side-menu:checked~.header__nav {
   max-height: 100%;
 }
 
-.header__side-menu:checked ~ .header__hamb .header__hamb-line {
+.header__side-menu:checked~.header__hamb .header__hamb-line {
   background: transparent;
 }
 
-.header__side-menu:checked ~ .header__hamb .header__hamb-line::before {
+.header__side-menu:checked~.header__hamb .header__hamb-line::before {
   transform: rotate(-45deg);
   top: 0;
 }
 
-.header__side-menu:checked ~ .header__hamb .header__hamb-line::after {
+.header__side-menu:checked~.header__hamb .header__hamb-line::after {
   transform: rotate(45deg);
   top: 0;
 }
@@ -241,7 +218,6 @@
   display: inline-block;
   color: $btn-text;
   width: 9rem;
-  /* margin: 0 14px 0 12px; */
 }
 
 /* header end */
@@ -336,7 +312,6 @@
 
           .block-festival__why-item-text-p {
             text-align: left;
-            // font-size: 20px;
             font-weight: 400;
             margin-left: 20px;
             margin-bottom: 1rem;
@@ -441,12 +416,6 @@
     text-align: center;
   }
 
-  .card__text {
-    /*font-family: $font3;
-    color: $text;
-    font-weight: 400;
-    font-size: 1.0625rem; то, что нужно убрать*/
-  }
 }
 
 .block-projects__wrapper {
@@ -455,9 +424,11 @@
     width: 100%;
     border: 3px solid $border-line;
     border-radius: 15px;
+
     @media screen and (max-width: 901px) {
       margin-bottom: 30px;
     }
+
     @media screen and (max-width: 553px) {
       max-width: 400px;
     }
@@ -466,12 +437,10 @@
       max-width: 100%;
       background-color: $background-2;
       border-radius: 15px;
-      /*внутри то, что я добавила, чтобы фон был до конца карточки*/
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
-      /*конец добавленного*/
 
       .card__img {
         padding: 30% 10% 30% 10%;
@@ -483,6 +452,7 @@
         min-height: 200px;
         border-radius: 15px;
       }
+
       .card__img-one {
         background-color: $background;
         border-radius: 15px;
@@ -518,32 +488,41 @@
     margin-bottom: 30px;
   }
 }
+
 .card__text-p-one {
   margin-bottom: 56px;
 }
+
 .card__text-p-two {
   margin-bottom: 36px;
+
   @media screen and (max-width: 701px) {
     margin-bottom: 82px;
   }
 }
+
 .card__text-p-three {
   @media screen and (max-width: 901px) {
     margin-bottom: 50px;
   }
+
   @media screen and (max-width: 753px) {
     margin-bottom: 74px;
   }
 }
+
 .card__text-p-four {
   margin-bottom: 56px;
+
   @media screen and (max-width: 901px) {
     margin-bottom: 80px;
   }
+
   @media screen and (max-width: 701px) {
     margin-bottom: 102px;
   }
 }
+
 .card__text-p-five {
   margin-bottom: 70px;
 }
@@ -828,10 +807,12 @@
         display: flex;
         flex-basis: 40%;
         justify-content: space-around;
+
         @media (max-width: 920px) {
           width: 30rem;
           margin-bottom: 3%;
         }
+
         @media (max-width: 500px) {
           flex-direction: column;
           align-items: center;
@@ -870,19 +851,17 @@
   flex-basis: 24.86%;
   flex-direction: column;
   margin-bottom: 5%;
+
   @media (max-width: 920px) {
     margin-bottom: 7%;
   }
-  /*добавила*/
 }
 
 .box-review {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  // width: 71.9rem;
   width: 100%;
-  /*добавила.нужно чтобы этот блок был шириной в контейнер*/
   height: 25rem;
   border-radius: 4.6875rem;
   background: $background;
@@ -980,12 +959,8 @@
   display: flex;
   width: 100%;
   padding-top: 6.06rem;
-  // padding-bottom: 9.69rem;
   margin-bottom: 2rem;
-  /*добавила*/
-  // height: 40.75rem;
   height: 30rem;
-  /*добавила*/
 }
 
 .gallery__box {
@@ -997,7 +972,7 @@
   line-height: 0;
 }
 
-.gallery__box > img {
+.gallery__box>img {
   width: 200%;
   height: 100%;
   object-fit: cover;
@@ -1008,7 +983,7 @@
   flex: 1 1 50%;
 }
 
-.gallery__box:hover > img {
+.gallery__box:hover>img {
   width: 100%;
   height: 100%;
 }
@@ -1076,7 +1051,7 @@
         .block-help__button {
           display: inline-block;
           align-self: center;
-      
+
           .block-help__button-1 {
             text-decoration: none;
           }
@@ -1117,6 +1092,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 39px;
+
   @media screen and (max-width: 694px) {
     min-height: 80px;
     padding-top: 30px;
