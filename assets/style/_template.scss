@@ -1,12 +1,9 @@
 @font-face {
   font-family: "TildaSansExtraBold";
   src: url("./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.eot");
-  src: url("./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.woff2")
-      format("woff2"),
-    url("./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.woff")
-      format("woff");
+  src: url("./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.woff2") format("woff2"),
+    url("./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -14,12 +11,9 @@
 @font-face {
   font-family: "TildaSansBold";
   src: url("./assets/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.eot");
-  src: url("./assets/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("./assets/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.woff2")
-      format("woff2"),
-    url("./assets/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.woff")
-      format("woff");
+  src: url("./assets/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.woff2") format("woff2"),
+    url("./assets/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -27,12 +21,9 @@
 @font-face {
   font-family: "TildaSansRegular";
   src: url("./assets/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.eot");
-  src: url("./assets/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("./assets/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.woff2")
-      format("woff2"),
-    url("./assets/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.woff")
-      format("woff");
+  src: url("./assets/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.woff2") format("woff2"),
+    url("./assets/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -88,31 +79,28 @@ body {
   display: flex;
   flex-direction: column;
   max-height: 500rem;
-  @media (max-width: 1110px) {
-    // max-height: 450rem;
-    /*эту величину поставила для теста своего блока*/
-  }
-  @media (max-width: 950px) {
-    // max-height: 500rem;
-    /*эту величину поставила для теста своего блока*/
-  }
-  @media (max-width: 900px) {
-    // height: 415rem;
-    /*эту величину поставила для теста своего блока*/
-  }
+
+  @media (max-width: 1110px) {}
+
+  @media (max-width: 950px) {}
+
+  @media (max-width: 900px) {}
 }
+
 .main {
   display: flex;
   flex-basis: 94.05%;
   flex-direction: column;
   margin-top: 12%;
+
   @media screen and (max-width: 769px) {
     margin-top: 15%;
   }
+
   @media screen and (max-width: 392px) {
     margin-top: 19%;
   }
-} /*просто блок перенесла выше*/
+}
 
 .container {
   max-width: 1140px;
@@ -120,12 +108,15 @@ body {
   width: 100%;
   display: flex;
   margin: 0 auto;
+
   @media screen and (max-width: 1192px) {
     max-width: 1080px;
   }
+
   @media screen and (max-width: 1150px) {
     max-width: 1070px;
   }
+
   @media screen and (max-width: 1088px) {
     max-width: 888px;
   }
@@ -133,24 +124,31 @@ body {
   @media screen and (max-width: 919px) {
     max-width: 728px;
   }
+
   @media screen and (max-width: 828px) {
     max-width: 719px;
   }
+
   @media screen and (max-width: 789px) {
     max-width: 660px;
   }
+
   @media screen and (max-width: 752px) {
     max-width: 630px;
   }
+
   @media screen and (max-width: 652px) {
     max-width: 520px;
   }
+
   @media screen and (max-width: 552px) {
     max-width: 432px;
   }
+
   @media screen and (max-width: 452px) {
     max-width: 332px;
   }
+
   @media screen and (max-width: 380px) {
     max-width: 300px;
   }
@@ -189,26 +187,13 @@ body {
     line-height: 3rem;
   }
 
-  /*шрифт по брейкпойнтам добавила*/
 }
 
 .text-p {
   color: $text;
   font-family: $font3;
   font-size: 1.375rem;
-  line-height: 2.25rem; /* 163.636% */
-
-  // @media (max-width: 900px) {
-  //   font-size: 1.35rem;
-  //   line-height: 2.2rem;
-  // }
-
-  // @media (max-width: 500px) {
-  //   font-size: 1.3rem;
-  //   line-height: 2rem;
-  // }
-
-  /*шрифт по брейкпойнтам добавила*/
+  line-height: 2.25rem;
 }
 
 .text-p__small {
@@ -216,17 +201,7 @@ body {
   font-family: $font3;
   font-size: 1.2rem;
   font-weight: 500;
-  line-height: 1.375rem; /* 137.5% */
-
-  // @media (max-width: 900px) {
-  //   font-size: 1.18rem;
-  //   line-height: 1.3rem;
-  // }
-
-  // @media (max-width: 500px) {
-  //   font-size: 1.1rem;
-  //   line-height: 1.2rem;
-  // }
+  line-height: 1.375rem;
 }
 
 a,
@@ -247,5 +222,3 @@ a:focus {
 li {
   cursor: pointer;
 }
-
-
