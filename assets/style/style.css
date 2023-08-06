@@ -70,12 +70,12 @@ body {
 }
 @media screen and (max-width: 769px) {
   .main {
-    margin-top: 15%;
+    margin-top: 17%;
   }
 }
 @media screen and (max-width: 392px) {
   .main {
-    margin-top: 19%;
+    margin-top: 20%;
   }
 }
 
@@ -319,11 +319,12 @@ li {
 @media screen and (max-width: 919px) {
   .header__link {
     padding: 10px;
+    font-size: 0.85rem;
   }
 }
 @media screen and (max-width: 769px) {
   .header__link {
-    padding: 18px;
+    padding: 15px;
   }
 }
 
