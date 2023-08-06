@@ -82,64 +82,10 @@ body {
 .container {
   max-width: 1140px;
   min-width: 320px;
+  padding: 0 7%;
   width: 100%;
   display: flex;
   margin: 0 auto;
-}
-@media screen and (max-width: 1192px) {
-  .container {
-    max-width: 1080px;
-  }
-}
-@media screen and (max-width: 1150px) {
-  .container {
-    max-width: 1070px;
-  }
-}
-@media screen and (max-width: 1088px) {
-  .container {
-    max-width: 888px;
-  }
-}
-@media screen and (max-width: 919px) {
-  .container {
-    max-width: 728px;
-  }
-}
-@media screen and (max-width: 828px) {
-  .container {
-    max-width: 719px;
-  }
-}
-@media screen and (max-width: 789px) {
-  .container {
-    max-width: 660px;
-  }
-}
-@media screen and (max-width: 752px) {
-  .container {
-    max-width: 630px;
-  }
-}
-@media screen and (max-width: 652px) {
-  .container {
-    max-width: 520px;
-  }
-}
-@media screen and (max-width: 552px) {
-  .container {
-    max-width: 432px;
-  }
-}
-@media screen and (max-width: 452px) {
-  .container {
-    max-width: 332px;
-  }
-}
-@media screen and (max-width: 380px) {
-  .container {
-    max-width: 300px;
-  }
 }
 
 .button {
@@ -516,6 +462,7 @@ li {
   font-weight: 400;
   margin-left: 20px;
   margin-bottom: 1rem;
+  padding: 2%;
 }
 .block-festival .block-festival__container .block-festival__buttons {
   display: flex;

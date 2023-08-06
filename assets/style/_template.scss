@@ -117,53 +117,11 @@ body {
 .container {
   max-width: 1140px;
   min-width: 320px;
+  padding: 0 7%;
   width: 100%;
   display: flex;
   margin: 0 auto;
 
-  @media screen and (max-width: 1192px) {
-    max-width: 1080px;
-  }
-
-  @media screen and (max-width: 1150px) {
-    max-width: 1070px;
-  }
-
-  @media screen and (max-width: 1088px) {
-    max-width: 888px;
-  }
-
-  @media screen and (max-width: 919px) {
-    max-width: 728px;
-  }
-
-  @media screen and (max-width: 828px) {
-    max-width: 719px;
-  }
-
-  @media screen and (max-width: 789px) {
-    max-width: 660px;
-  }
-
-  @media screen and (max-width: 752px) {
-    max-width: 630px;
-  }
-
-  @media screen and (max-width: 652px) {
-    max-width: 520px;
-  }
-
-  @media screen and (max-width: 552px) {
-    max-width: 432px;
-  }
-
-  @media screen and (max-width: 452px) {
-    max-width: 332px;
-  }
-
-  @media screen and (max-width: 380px) {
-    max-width: 300px;
-  }
 }
 
 .button {
