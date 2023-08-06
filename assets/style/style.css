@@ -559,6 +559,7 @@ li {
 .block-projects__wrapper .card {
   max-width: 220px;
   width: 100%;
+  margin-bottom: 15px;
   border: 3px solid #e7dcc8;
   border-radius: 15px;
 }
