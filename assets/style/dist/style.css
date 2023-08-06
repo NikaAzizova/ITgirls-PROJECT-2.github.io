@@ -1,0 +1,932 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "TildaSansExtraBold";
+  src: url("./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.eot");
+  src: url("./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.woff2") format("woff2"), url("./assets/fonts/TildaSans.07Web/TildaSans-ExtraBold/TildaSans-ExtraBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TildaSansBold";
+  src: url("./assets/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.eot");
+  src: url("./assets/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.woff2") format("woff2"), url("./assets/fonts/TildaSans.07Web/TildaSans-Bold/TildaSans-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TildaSansRegular";
+  src: url("./assets/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.eot");
+  src: url("./assets/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.woff2") format("woff2"), url("./assets/fonts/TildaSans.07Web/TildaSans-Regular/TildaSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*заголовки*/
+/*тексты*/
+/*кнопки*/
+/*текст кнопок*/
+/*фон блоков 2,3,5*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  /*не работает с указанным размером шрифта*/
+}
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 312.5rem;
+}
+@media (max-width: 900px) {
+  body {
+    height: 500rem;
+    /*эту величину поставила для теста своего блока*/
+  }
+}
+
+.main {
+  display: flex;
+  flex-basis: 94.05%;
+  flex-direction: column;
+}
+
+/*просто блок перенесла выше*/
+.container {
+  max-width: 1140px;
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1088px) {
+  .container {
+    max-width: 888px;
+  }
+}
+@media screen and (max-width: 919px) {
+  .container {
+    max-width: 719px;
+  }
+}
+
+.button {
+  padding: 0.75rem 2.5rem;
+  border-radius: 1.5625rem;
+  background: #bc2525;
+  border: none;
+  backdrop-filter: blur(16px);
+  color: #f1f5fa;
+  font-family: "TildaSansBold";
+  font-size: 1.125rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.button:hover {
+  background: #d72424;
+}
+
+.title-h2 {
+  color: #000;
+  font-family: "TildaSansBold";
+  font-size: 2.5rem;
+  line-height: 4rem;
+  /*шрифт по брейкпойнтам добавила*/
+}
+@media (max-width: 900px) {
+  .title-h2 {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .title-h2 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+}
+
+.text-p {
+  color: #324665;
+  font-family: "TildaSansRegular";
+  font-size: 1.375rem;
+  line-height: 2.25rem;
+  /* 163.636% */
+  /*шрифт по брейкпойнтам добавила*/
+}
+@media (max-width: 900px) {
+  .text-p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .text-p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+
+.text-p__small {
+  color: #324665;
+  font-family: "TildaSansRegular";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  /* 137.5% */
+  /*шрифт по брейкпойнтам добавила*/
+}
+@media (max-width: 900px) {
+  .text-p__small {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .text-p__small {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+  }
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+.text-p__small {
+  color: #324665;
+  font-family: "TildaSansRegular";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  /*шрифт по брейкпойнтам добавила*/
+}
+@media (max-width: 900px) {
+  .text-p__small {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .text-p__small {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+  }
+}
+
+.header {
+  flex-basis: 2%;
+}
+@media screen and (max-width: 769px) {
+  .header {
+    flex-basis: 1%;
+  }
+}
+
+.block-festival {
+  flex-basis: 11.25%;
+}
+
+.block-festival__container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.block-festival__text {
+  font-family: "TildaSansBold", sans-serif;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.block-festival__text-p {
+  font-family: "TildaSansRegular", sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.block-festival__content {
+  background-position: top center;
+  background-size: initial;
+  padding-bottom: 180px;
+}
+
+.block-festival__why {
+  margin-top: 60px;
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(3, 312px);
+  justify-content: center;
+}
+
+.block-festival__why-item {
+  text-align: center;
+}
+
+.block-festival__why-item-title {
+  font-family: "TildaSansMedium", sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 24px 0;
+}
+
+.block-festival__why-item-text {
+  font-family: "TildaSansRegular", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.block-festival__why-item-img {
+  height: 200px;
+}
+
+.block-festival__why-item-image img {
+  max-width: 100%;
+}
+
+.block-progress {
+  flex-basis: 15.37%;
+}
+
+.block-partners {
+  flex-basis: 11%;
+}
+
+.block-competition {
+  display: flex;
+  flex-basis: 15.82%;
+  justify-content: center;
+}
+.block-competition .block-competition__container {
+  display: flex;
+  flex: 1;
+  border-radius: 4.6875rem;
+  box-shadow: 0px 25px 100px 0px rgba(2, 43, 121, 0.1);
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.block-competition .block-competition__container .block-competition__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: 75%;
+  gap: 5%;
+  padding-left: 6.19rem;
+  padding-top: 3.87rem;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__content {
+    flex-basis: 60%;
+    max-width: 80%;
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+.block-competition .block-competition__container .block-competition__content .block-competition__text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 52%;
+  justify-content: space-around;
+  gap: 5%;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__content .block-competition__text {
+    text-align: center;
+    flex-basis: 40%;
+  }
+}
+.block-competition .block-competition__container .block-competition__content .block-competition__text .block-competition__title {
+  text-align: center;
+}
+.block-competition .block-competition__container .block-competition__content .block-competition__nomination {
+  flex-basis: 30%;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__content .block-competition__nomination {
+    text-align: center;
+  }
+}
+.block-competition .block-competition__container .block-competition__content .block-competition__nomination .block-competition__nomination-title {
+  color: #bc2525;
+}
+.block-competition .block-competition__container .block-competition__content .block-competition__nomination .block-competition__nomination-list .block-competition__nomination-item {
+  font-weight: 700;
+  line-height: 2.25rem;
+  color: #000;
+  list-style-type: none;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__content .block-competition__nomination .block-competition__nomination-list .block-competition__nomination-item {
+    font-weight: 600;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 500) {
+  .block-competition .block-competition__container .block-competition__content .block-competition__nomination .block-competition__nomination-list .block-competition__nomination-item {
+    font-weight: 0.6rem;
+    line-height: 1rem;
+  }
+}
+@media (max-width: 400) {
+  .block-competition .block-competition__container .block-competition__content .block-competition__nomination .block-competition__nomination-list .block-competition__nomination-item {
+    font-weight: 0.5rem;
+    line-height: 1rem;
+  }
+}
+.block-competition .block-competition__container .block-competition__content .block-competition__text-2 {
+  flex-basis: 12%;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__content .block-competition__text-2 {
+    text-align: center;
+  }
+}
+.block-competition .block-competition__container .block-competition__img-block {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__img-block {
+    flex-basis: 40%;
+  }
+}
+.block-competition .block-competition__container .block-competition__img-block .block-competition__img {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  margin-right: -20%;
+  background-image: url(../images/competition-background.png);
+  background-size: 34.8125rem 25.14531rem;
+  background-position: 60% 50%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__img-block .block-competition__img {
+    background-size: 19rem auto;
+  }
+}
+.block-competition .block-competition__container .block-competition__img-block .block-competition__img .block-competition__img-inner {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/competition-girl.png);
+  background-position: 70% 60%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 900px) {
+  .block-competition .block-competition__container .block-competition__img-block .block-competition__img .block-competition__img-inner {
+    background-size: 17rem auto;
+    background-position: 40% 60%;
+  }
+}
+.block-competition .block-competition__container .block-competition__img-block .block-competition__img .block-competition__vector {
+  width: 23.17156rem;
+  height: 4.95231rem;
+  transform: rotate(-15.203deg);
+  flex-shrink: 0;
+}
+.block-competition .block-competition__container .block-competition__img-block .block-competition__buttons {
+  display: flex;
+  flex-basis: 40%;
+  justify-content: space-around;
+}
+.block-competition .block-competition__container .block-competition__img-block .block-competition__buttons .block-competition__button {
+  display: inline-block;
+  align-self: center;
+}
+.block-competition .block-competition__container .block-competition__img-block .block-competition__buttons .block-competition__button .block-competition__button-1 {
+  text-decoration: none;
+}
+
+.block-review {
+  flex-basis: 24.86%;
+}
+
+.block-help {
+  flex-basis: 20.3%;
+  /*может блок в дальнейшем будет меньше, пока ставлю по макету*/
+}
+
+.footer {
+  flex-basis: 2.77%;
+}
+
+.block-partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  background: #f9f6f1;
+}
+.block-partners .container-column {
+  max-width: 1140px;
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.block-partners .container-column .partners__heading {
+  display: flex;
+  margin: 0 auto;
+}
+.block-partners .container-column .partners__slider {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding: 3% 3% 3% 3rem;
+  margin: 3% auto 3% auto;
+  background-color: #fff;
+  border-radius: 4.6875rem;
+  box-shadow: 0px 15px 40px 0px rgba(2, 43, 121, 0.1);
+  overflow-x: auto;
+}
+.block-partners .container-column .partners__slider .slider--track {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  align-self: center;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.block-partners .container-column .partners__slider .slider--track .slide {
+  flex: none;
+  scroll-snap-align: start;
+  width: 23%;
+  margin: 0 1rem;
+}
+@media (max-width: 900px) {
+  .block-partners .container-column .partners__slider .slider--track .slide {
+    width: 23%;
+  }
+}
+@media (max-width: 700px) {
+  .block-partners .container-column .partners__slider .slider--track .slide {
+    width: 31%;
+  }
+}
+@media (max-width: 500px) {
+  .block-partners .container-column .partners__slider .slider--track .slide {
+    width: 47%;
+  }
+}
+@media (max-width: 400px) {
+  .block-partners .container-column .partners__slider .slider--track .slide {
+    width: 100%;
+  }
+}
+.block-partners .container-column .partners__slider .slider--track .slide img {
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+.block-partners .container-column .partners__slider .slider--track .slide .text-p__small {
+  width: 100%;
+}
+.block-partners .container-column .partners__buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  column-gap: 20%;
+  align-items: center;
+}
+.block-partners .container-column .partners__buttons .partners__buttons button {
+  width: 100%;
+}
+
+/* header start */
+.header {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.header__logo {
+  align-self: center;
+}
+@media screen and (max-width: 769px) {
+  .header__logo {
+    order: 1;
+  }
+}
+
+.header__img {
+  width: 4rem;
+}
+@media screen and (max-width: 769px) {
+  .header__img {
+    width: 5rem;
+  }
+}
+
+.header__nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #fff;
+  overflow: hidden;
+}
+@media screen and (max-width: 769px) {
+  .header__nav {
+    margin-top: 26rem;
+  }
+}
+@media screen and (max-width: 361px) {
+  .header__nav {
+    margin-top: 40rem;
+  }
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+@media screen and (max-width: 769px) {
+  .header__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40%;
+  }
+}
+@media screen and (max-width: 361px) {
+  .header__list {
+    padding-left: 30%;
+  }
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header__item {
+  list-style: none;
+  font-family: "TildaSansExtraBold";
+}
+
+.header__link {
+  display: block;
+  padding: 30px;
+  color: #000;
+  text-align: center;
+}
+
+.header__link:hover {
+  color: #bc2525;
+}
+
+.header__nav {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+
+.header__hamb {
+  cursor: pointer;
+  float: left;
+  padding: 23px;
+}
+
+/* Style label tag */
+.header__hamb-line {
+  background: #324665;
+  border-radius: 0.1875rem;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+/* Style span tag */
+.header__hamb-line::before,
+.header__hamb-line::after {
+  background: #324665;
+  border-radius: 0.1875rem;
+  content: "";
+  display: block;
+  height: 110%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header__hamb-line::before {
+  top: 5px;
+}
+
+.header__hamb-line::after {
+  top: -5px;
+}
+
+.header__side-menu {
+  display: none;
+}
+
+/* Hide checkbox */
+/* Toggle menu icon */
+.header__side-menu:checked ~ .header__nav {
+  max-height: 100%;
+}
+
+.header__side-menu:checked ~ .header__hamb .header__hamb-line {
+  background: transparent;
+}
+
+.header__side-menu:checked ~ .header__hamb .header__hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header__side-menu:checked ~ .header__hamb .header__hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .header__nav {
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+  }
+
+  .header__item {
+    float: left;
+  }
+
+  .header__link:hover {
+    background-color: transparent;
+    color: #bc2525;
+  }
+
+  .header__hamb {
+    display: none;
+  }
+}
+/* button */
+@media screen and (max-width: 769px) {
+  .header__btn-container {
+    order: 2;
+  }
+}
+
+.header__btn {
+  display: inline-block;
+  color: #f1f5fa;
+  /* margin: 0 14px 0 12px; */
+}
+
+/* header end */
+.block-festival {
+  flex-basis: 11.25%;
+}
+.block-festival .block-festival__container {
+  max-width: 71.25rem;
+  margin: 0 auto;
+}
+.block-festival .block-festival__container .block-festival__content {
+  background-position: top center;
+  background-size: initial;
+  padding-bottom: 11.25rem;
+}
+.block-festival .block-festival__container .block-festival__content .block-festival__text {
+  font-family: "TildaSansBold";
+  font-size: 4rem;
+  line-height: 5rem;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.block-festival .block-festival__container .block-festival__content .block-festival__text .block-festival__video {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.block-festival .block-festival__container .block-festival__content .block-festival__text .block-festival__video .block-festival__video-item {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 0;
+  aspect-ratio: 16/9;
+}
+.block-festival .block-festival__container .block-festival__content .block-festival__text .block-festival__text-p {
+  font-family: "TildaSansRegular";
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+.block-festival .block-festival__container .block-festival__content .block-festival__logo-img {
+  margin-right: 0.625rem;
+  margin-bottom: 0.625rem;
+  height: 9.375rem;
+}
+.block-festival .block-festival__container .block-festival__content .block-festival__logo-img .block-festival__logo-img img {
+  max-width: 100%;
+}
+.block-festival .block-festival__container .block-festival__why {
+  margin-top: 2.75rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, 322px);
+  justify-content: center;
+}
+.block-festival .block-festival__container .block-festival__why .block-festival__why-item {
+  margin: 3%;
+  border: 2px solid #e7dcc8;
+  border-radius: 15px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.block-festival .block-festival__container .block-festival__why .block-festival__why-item .block-festival__why-item-img {
+  border-radius: 15px;
+  height: 13.125rem;
+  max-width: 100%;
+}
+.block-festival .block-festival__container .block-festival__why .block-festival__why-item .block-festival__why-item-title {
+  font-family: "TildaSansMedium", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+  padding: 1.5rem 0;
+}
+.block-festival .block-festival__container .block-festival__why .block-festival__why-item .block-festival__why-item-text {
+  font-family: "TildaSansRegular";
+  font-size: 1rem;
+  font-weight: 700;
+}
+.block-festival .block-festival__container .block-festival__why .block-festival__why-item .block-festival__why-item-text .block-festival__why-item-text-p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+.block-festival .block-festival__container .block-festival__buttons {
+  display: flex;
+  justify-content: center;
+  margin: 3.73rem auto;
+  column-gap: 10%;
+  text-decoration: none;
+}
+
+/* Блок достижения block-progress*/
+.block-progress {
+  background-color: #f9f6f1;
+}
+
+.container-two {
+  display: flex;
+  flex-direction: column;
+}
+.container-two .block-progress__main-wrapper {
+  display: flex;
+}
+.container-two .block-progress__main-wrapper .block-progress__wrapper-two .block-progress__img {
+  max-width: 100%;
+  width: 100%;
+  padding-top: 10%;
+}
+
+/*Часть с основным текстом block-progress*/
+.block-progress__wrapper {
+  max-width: 50%;
+  width: 100%;
+  padding-top: 7%;
+}
+.block-progress__wrapper .block-progress__title {
+  margin-bottom: 1.38rem;
+}
+.block-progress__wrapper .block-progress__text {
+  max-width: 100%;
+  width: 100%;
+  height: 80%;
+  color: #324665;
+  font-family: "TildaSansRegular";
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.25rem;
+  margin-bottom: 3rem;
+}
+
+/*Часть с карточками проектов блока block-progress*/
+.cards {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.cards .card__title {
+  margin-bottom: 8px;
+  font-family: "TildaSansExtraBold";
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: normal;
+  color: #000;
+  text-align: center;
+}
+.cards .card__text {
+  font-family: "TildaSansRegular";
+  color: #324665;
+  font-weight: 400;
+  font-size: 1.0625rem;
+}
+
+.block-projects__wrapper .card {
+  max-width: 220px;
+  width: 100%;
+}
+.block-projects__wrapper .card .card__wrapper {
+  margin: 5%;
+  border: 3px solid #e7dcc8;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.block-projects__wrapper .card .card__wrapper .card__img {
+  padding: 20% 2% 20% 2%;
+}
+.block-projects__wrapper .card .card__wrapper .card__img-size {
+  max-width: 100%;
+  width: 100%;
+  min-height: 200px;
+}
+.block-projects__wrapper .card .card__wrapper .title-h3 {
+  margin-bottom: 1rem;
+}
+.block-projects__wrapper .card .card__wrapper .card__text {
+  margin-bottom: 1rem;
+  padding: 5% 5% 0 5%;
+}
+.block-projects__wrapper .card .card__wrapper .text-p__block {
+  margin-bottom: 3.88rem;
+}
+.block-projects__wrapper .card .card__wrapper .card__link {
+  margin-bottom: 1rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #bc2525;
+}
