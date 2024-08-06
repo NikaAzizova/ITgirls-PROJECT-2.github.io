@@ -1,8 +1,6 @@
 @import "./template";
 
-/* header start */
 .header {
-  // flex-basis: 1%;
   background-color: #ffffff;
   position: fixed;
   top: 0;
@@ -130,8 +128,6 @@
   padding: 23px;
 }
 
-/* Style label tag */
-
 .header__hamb-line {
   background: $text;
   border-radius: 0.1875rem;
@@ -140,8 +136,6 @@
   position: relative;
   width: 24px;
 }
-
-/* Style span tag */
 
 .header__hamb-line::before,
 .header__hamb-line::after {
@@ -167,9 +161,6 @@
   display: none;
 }
 
-/* Hide checkbox */
-
-/* Toggle menu icon */
 .header__side-menu:checked ~ .header__nav {
   max-height: 100%;
 }
@@ -211,7 +202,6 @@
   }
 }
 
-/* button */
 .header__btn-container {
   @media screen and (max-width: 769px) {
     order: 2;
@@ -224,9 +214,6 @@
   width: 9rem;
 }
 
-/* header end */
-
-/* block-festival start */
 .block-festival {
   flex-basis: 11.25%;
 
@@ -336,9 +323,6 @@
   }
 }
 
-/* block-festival end */
-
-/* block-progress start*/
 .block-progress {
   flex-basis: 15.37%;
   background-color: $background;
@@ -371,7 +355,6 @@
   }
 }
 
-/*the part with the main text of block-progress*/
 .block-progress__wrapper {
   max-width: 50%;
   width: 100%;
@@ -403,7 +386,6 @@
   }
 }
 
-/*The part with the cards of block-progress*/
 .cards {
   max-width: 100%;
   width: 100%;
@@ -533,9 +515,6 @@
   margin-bottom: 70px;
 }
 
-/* block-progress end */
-
-/* block-partners start */
 .block-partners {
   flex-basis: 11%;
   display: flex;
@@ -632,9 +611,6 @@
   }
 }
 
-/* block-partners end */
-
-/* block-competition start */
 .block-competition {
   display: flex;
   flex-basis: 25%;
@@ -838,9 +814,6 @@
   }
 }
 
-/* block-competition end */
-
-/* block-review start */
 @mixin card-style {
   width: 15.6875rem;
   height: 9.70481rem;
@@ -1003,9 +976,6 @@
   width: 100%;
 }
 
-/* block-review start */
-
-/* block-help start */
 .block-help {
   flex-basis: 12%;
   display: flex;
@@ -1080,9 +1050,6 @@
   }
 }
 
-/* block-help end */
-
-/*footer start*/
 .footer {
   flex-basis: 2.77%;
   background-color: $header;
@@ -1104,7 +1071,6 @@
     padding-top: 30px;
   }
 
-  /* Часть с лого */
   .footer__logo {
     flex-basis: 10%;
 
@@ -1114,7 +1080,6 @@
   }
 }
 
-/* Часть с меню и ссылками */
 .footer__nav {
   flex-grow: 1;
 
@@ -1139,7 +1104,6 @@
   }
 }
 
-/* Часть с иконками */
 .icons-box {
   width: 2rem;
   height: 2rem;
@@ -1168,8 +1132,6 @@
   }
 }
 
-/*Часть с нижней строчкой надписей*/
-
 .footer__second-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1197,5 +1159,3 @@
     }
   }
 }
-
-/*footer end*/

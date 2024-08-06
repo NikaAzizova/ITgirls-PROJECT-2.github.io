@@ -20,13 +20,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/*заголовки*/
-/*тексты*/
-/*кнопки*/
-/*текст кнопок*/
-/*фон блоков 2,3,5*/
-/*фон карточек блока block-progress*/
-/*цвета текстов футера*/
+
 * {
   margin: 0;
   padding: 0;
@@ -159,7 +153,6 @@ li {
   cursor: pointer;
 }
 
-/* header start */
 .header {
   background-color: #ffffff;
   position: fixed;
@@ -289,7 +282,6 @@ li {
   padding: 23px;
 }
 
-/* Style label tag */
 .header__hamb-line {
   background: #324665;
   border-radius: 0.1875rem;
@@ -299,7 +291,6 @@ li {
   width: 24px;
 }
 
-/* Style span tag */
 .header__hamb-line::before,
 .header__hamb-line::after {
   background: #324665;
@@ -324,8 +315,6 @@ li {
   display: none;
 }
 
-/* Hide checkbox */
-/* Toggle menu icon */
 .header__side-menu:checked ~ .header__nav {
   max-height: 100%;
 }
@@ -364,7 +353,7 @@ li {
     display: none;
   }
 }
-/* button */
+
 @media screen and (max-width: 769px) {
   .header__btn-container {
     order: 2;
@@ -377,8 +366,6 @@ li {
   width: 9rem;
 }
 
-/* header end */
-/* block-festival start */
 .block-festival {
   flex-basis: 11.25%;
 }
@@ -473,8 +460,6 @@ li {
   text-decoration: none;
 }
 
-/* block-festival end */
-/* block-progress start*/
 .block-progress {
   flex-basis: 15.37%;
   background-color: #f9f6f1;
@@ -505,7 +490,6 @@ li {
   }
 }
 
-/*the part with the main text of block-progress*/
 .block-progress__wrapper {
   max-width: 50%;
   width: 100%;
@@ -537,7 +521,6 @@ li {
   line-height: 2.25rem;
 }
 
-/*The part with the cards of block-progress*/
 .cards {
   max-width: 100%;
   width: 100%;
@@ -662,8 +645,6 @@ li {
   margin-bottom: 70px;
 }
 
-/* block-progress end */
-/* block-partners start */
 .block-partners {
   flex-basis: 11%;
   display: flex;
@@ -750,8 +731,6 @@ li {
   width: 100%;
 }
 
-/* block-partners end */
-/* block-competition start */
 .block-competition {
   display: flex;
   flex-basis: 25%;
@@ -958,8 +937,6 @@ li {
   text-decoration: none;
 }
 
-/* block-competition end */
-/* block-review start */
 .block-review {
   flex-basis: 24.86%;
   flex-direction: column;
@@ -1124,8 +1101,6 @@ li {
   width: 100%;
 }
 
-/* block-review start */
-/* block-help start */
 .block-help {
   flex-basis: 12%;
   display: flex;
@@ -1197,8 +1172,6 @@ li {
   width: 100%;
 }
 
-/* block-help end */
-/*footer start*/
 .footer {
   flex-basis: 2.77%;
   background-color: #000;
@@ -1213,7 +1186,7 @@ li {
   display: flex;
   justify-content: space-between;
   padding-top: 39px;
-  /* Часть с лого */
+
 }
 @media screen and (max-width: 694px) {
   .footer__wrapper {
@@ -1228,7 +1201,6 @@ li {
   width: 4rem;
 }
 
-/* Часть с меню и ссылками */
 .footer__nav {
   flex-grow: 1;
 }
@@ -1251,7 +1223,6 @@ li {
   font-size: 1rem;
 }
 
-/* Часть с иконками */
 .icons-box {
   width: 2rem;
   height: 2rem;
@@ -1285,7 +1256,6 @@ li {
   }
 }
 
-/*Часть с нижней строчкой надписей*/
 .footer__second-wrapper {
   display: flex;
   justify-content: space-between;
