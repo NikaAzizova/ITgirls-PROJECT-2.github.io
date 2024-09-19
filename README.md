@@ -1,6 +1,7 @@
 # ITgirls-PROJECT-2
 
-<h1>Проект лендинга Vite, scss:  https://nikaazizova.github.io/ITgirls-PROJECT-2.github.io/</h1>
+<h1>Проект лендинга Vite, scss:</h1>  
+<p>https://nikaazizova.github.io/ITgirls-PROJECT-2.github.io/</p>
 <br>
 <div> 
 <div>1.Скопировать репозиторий локально</div>
