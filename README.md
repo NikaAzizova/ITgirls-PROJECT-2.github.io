@@ -21,29 +21,29 @@
 
 <div>
 <p align="center">
- <img width="200px" src="imgOne.png" alt="qr"/>
+ <img width="200px" src="./assets/images/screenShots/imgOne.png" alt="photo one"/>
 </p>
 </div>
 
 <div>
 <p align="center">
- <img width="200px" src="imgTwo.png" alt="qr"/>
+ <img width="200px" src="./assets/images/screenShots/imgTwo.png" alt="photo two"/>
 </p>
 </div>
 
 <div>
 <p align="center">
- <img width="200px" src="imgThree.png" alt="qr"/>
+ <img width="200px" src="./assets/images/screenShots/imgThree.png" alt="photo three"/>
 </p>
 </div>
 
 <div>
 <p align="center">
- <img width="200px" src="imgFour.png" alt="qr"/>
+ <img width="200px" src="./assets/images/screenShots/imgFour.png" alt="photo four"/>
 </p>
 </div>
 <div>
 <p align="center">
- <img width="200px" src="imgFive.png" alt="qr"/>
+ <img width="200px" src="./assets/images/screenShots/imgFive.png" alt="photo five"/>
 </p>
 </div>
